@@ -1,0 +1,148 @@
+#h1{
+    text-align:center;
+    color:red;
+    margin-top: 50px;
+    font-size: 70px;
+
+}
+
+
+marquee{
+    color: darkviolet;
+    font-family: "Microsoft Yi Baiti";
+}
+#h4{
+    margin-top: -16px;
+    margin-bottom:50px ;
+}
+.names{
+margin-top:80%;
+
+}
+
+#details{
+    margin-top:80%;
+
+}
+
+
+
+#login{
+    float:left;
+    margin-top: -34px;
+    margin-left: 1243px;
+
+}
+.btn-default{
+    margin-left: 50%;
+    float:right;
+
+}
+
+#range{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: double;
+    color: firebrick;
+}
+
+#pad{
+    margin-top: -16px;
+}
+
+body{
+         background: snow;
+}
+
+div:nth-of-type(1){
+    float:left;
+}
+
+div:nth-of-type(2){
+    float: left;
+
+}
+
+#saree {
+    margin-left: 270px;
+}
+
+div:nth-of-type(4){
+    float:left;
+}
+
+
+
+
+div:nth-of-type(5){
+    float: left;
+    margin-left: 200px;
+
+}
+
+div:nth-of-type(6){
+    float: right;
+    margin-left: 300px;
+
+}
+
+.bi{
+    width:220px;
+    margin-right: 35px;
+    margin-left: 44px;
+}
+
+
+img:nth-of-type(1){
+    margin-left:45px;
+}
+
+img{
+
+    height:250px;
+    width:40%
+}
+
+hr{
+    height:5px ;
+    color:black;
+    solid-opacity: 100%;
+}
+
+#suits{
+    margin-right:154px;
+}
+
+//G50
+
+#h2{
+    margin-top: 351px;
+    margin-left: 40px;
+}
+
+
+button{
+    background:none;
+}
+
+
+
+#login:hover {
+    color:red;
+}
+
+
+#create{
+    padding-right: 41px;
+}
+
+
+.col-lg-6{
+    padding-left: 50px;
+}
+
+#row{
+
+    margin-left: 40px;
+}

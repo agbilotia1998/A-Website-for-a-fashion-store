@@ -1,0 +1,29 @@
+.center {
+
+
+
+    text-align: center;
+
+}
+
+input
+{
+    margin-left:660px;
+    border-radius: 5px;
+}
+
+button{
+    margin-left:715px;
+    background-color: cornflowerblue;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+a{
+    color: black;
+}
+body{
+    color: #FFF;
+    margin-top: 100px;
+    background-size: cover;
+}
