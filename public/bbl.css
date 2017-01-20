@@ -6,6 +6,22 @@
 
 }
 
+#h2{
+    margin-top: -200px;
+    margin-left: 280px;
+    color:aqua;
+    text-decoration: double;
+    text-decoration-style: double;
+    font-size: 43px;
+    font-family: "Bradley Hand ITC";
+}
+
+center{
+    margin-top: 20px;
+    margin-left: -125px;
+    color: red;
+}
+
 input
 {
     margin-left:660px;
@@ -13,7 +29,7 @@ input
 }
 
 button{
-    margin-left:715px;
+    margin-left:708px;
     background-color: cornflowerblue;
     border-color: blue;
     border-radius: 5px;
@@ -24,6 +40,11 @@ a{
 }
 body{
     color: #FFF;
-    margin-top: 100px;
+    margin-top: 292px;
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+}
+h1{
+    margin-left:575px;
 }

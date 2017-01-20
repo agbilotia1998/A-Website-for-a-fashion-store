@@ -19,16 +19,6 @@ var bbSchema=new mongoose.Schema({
 
 var newacc =mongoose.model("bbl",bbSchema);
 
-//var credentials=new newacc();
-
-
-    // name:req.body.name,
-    // username:req.body.username,
-    // password:req.body.password,
-    // email:req.body.email;
-
-
-
 
 
 app.use(express.static("public"));
@@ -51,10 +41,8 @@ app.get("/create",function(req,res) {
     res.render("create.ejs")
     });
 
-app.get("/login",function(req,res)
-{
-
-res.render("login.ejs");
+app.get("/login",function(req,res){
+res.render("login.ejs",{a:"0"});
 
 }
 );
@@ -63,12 +51,12 @@ app.post("/loginned",function (req,res) {
 
     var user=req.body.username;
     var pass=req.body.password;
-
     newacc.findOne({username:user, password:pass},function(err,bb){
 
 
                 if (!bb) {
-                    res.send("Invalid Username and Password");
+                    res.render("login.ejs",{a:"1"});
+                   // alert("Invalid username or password");
                 }
                 else {
                     res.render("loginned.ejs", {name: bb.name});
@@ -105,35 +93,6 @@ app.post("/register",function(req,res)
     }
 
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3000,function()
 {
     console.log("SERVER STARTED");
