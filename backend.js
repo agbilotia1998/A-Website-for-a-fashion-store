@@ -38,7 +38,7 @@ app.get("/",function (req,res) {
 
 app.get("/create",function(req,res) {
 
-    res.render("create.ejs")
+    res.render("create.ejs",{b:"2"});
     });
 
 app.get("/login",function(req,res){
@@ -76,7 +76,31 @@ app.post("/register",function(req,res)
 
     };
 
-               newacc.create(details);
+        newacc.findOne({username:details.username},function(err,bb){
+
+            if(!bb){
+
+                newacc.findOne({email:details.email},function(err,bb){
+
+                    if(!bb) {
+                        newacc.create(details);
+                        res.render("register.ejs", {name: details.name});
+                    }
+
+                    else{
+                        res.render("create.ejs",{b:"0"});
+                    }
+
+            })
+            }
+            else{
+                res.render("create.ejs",{b:"1"});
+            }
+
+        })
+
+
+
 
         //  var name= req.body.name;
         // var username= req.body.username;
@@ -87,7 +111,7 @@ app.post("/register",function(req,res)
 
 
 
-        res.render("register.ejs",{name:details.name});
+
         /*res.redirect("/register");*/
 
     }

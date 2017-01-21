@@ -135,24 +135,42 @@
     <br>
     <br>
 
-
 <label>Male</label>
         <input type="radio" name="gender" value="MALE" required>
 <label>Female</label>
 <input type="radio" name="gender" value="FEMALE" required>
 
-</form>
+
 <br>
 <br>
 <button class="btn btn-success btn-lg" id="shift" type="submit"  >Create account</button>
 
-
-
+    </in>
 </div>
+
     <!--</form>-->
 <!--<form action="/register" method="post">-->
 
 </form>
+
+
+
+<% if (b==="0"){ %>
+
+
+    <h2 id="ejs">
+    Email already exists
+    </h2>
+<% } %>
+
+
+<% if (b==="1"){ %>
+
+<h2 id="ejs">
+
+    Username already exists
+</h2>
+<% } %>
 
 
 </body>
