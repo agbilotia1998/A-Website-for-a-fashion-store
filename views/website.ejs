@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/xfbml">
     <head>
         <meta charset="UTF-8">
         <title>A Clothing Store</title>
         <link rel="stylesheet" type="text/css" href="bb.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <meta property="fb:app_id"        content="208143129655109" />
+        <meta property="og:url"           content="https://www.facebook.com/search/top/?q=banke%20bihari%20fashion" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="A fashion store" />
 
 
-</head>
-<body >
+    </head>
+<body>
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '208143129655109',
+            xfbml      : 'true',
+            version    : 'v2.8',
+            cookie     : 'true'
+        });
+        FB.AppEvents.logPageView();
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=208143129655109";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
 
 
 
@@ -46,9 +74,14 @@
                         <li><a href="#">Suits</a> </li>
                     </ul>
                 </li>
+
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#">Privacy policy</a></li>
+                <li>
+
+                <div class="fb-like" data-href="https://www.facebook.com/search/top/?q=banke%20bihari%20fashion" data-width="15px" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                </li>
             </ul>
 
             <!--<ul class="nav navbar-nav navbar-right">-->
@@ -116,7 +149,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 
 <br>
 <div id="contents">
-<p id="range">RANGE OF CLOTHINGS</p>
+<p id="range">RANGE OF CLOTHINGS</p>i
 <br>
 <br>
 <br>
@@ -124,12 +157,12 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 
 
 
-<div class="container" >
+<div class="container"  id="container">
     <div class="row" id="div">
 
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="thumbnail">
-            <img src="ready made.jpg">
+            <img src="/Ready made/rm3.jpeg">
                 <div class="caption">
                     <a href="readymade.html" > EXPLORE FOR READY MADE CLOTHINGS</a>
                 </div>
@@ -137,12 +170,21 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         </div>
 
 
+        <div class="col-lg-3">
+            <div class="thumbnail">
+                <img src="/Sarees/s11.jpeg">
+                <div class="caption">
+
+                    <a href="sarees.html" id="saree"> EXPLORE FOR SAREES</a>
+                </div>
+            </div>
+        </div>
 
 
-        <div class="col-lg-4">
+        <div class="col-lg-3">
 
                 <div class="thumbnail">
-    <img src="suiting and shirtings.jpg">
+    <img src="/Shirtings/ss10.jpeg">
     <div class="caption">
     <a href="suitings.html" > EXPLORE FOR SUITINGS AND SHIRTINGS</a>
         </div>
@@ -150,15 +192,10 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
             </div>
 
 
-            <div class="col-lg-4">
-                <div class="thumbnail">
-    <img src="sarees.jpg">
-                    <div class="caption">
 
-    <a href="sarees.html" id="saree"> EXPLORE FOR SAREES</a>
-            </div>
-    </div>
-            </div>
+
+
+
 
     </div>
 
@@ -173,19 +210,19 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 <br>
 <br>
 
-<div class="row" >
+<div class="row"  id="row2" >
 
 
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <div class="thumbnail">
-    <img src="chooni.jpg" class="bi">
+    <img src="/Choonri/c6.jpeg" class="bi">
             <div class="caption">
     <a href="chooni.html" class="bi" > EXPLORE FOR CHOONRI</a>
     </div>
         </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <div class="thumbnail">
     <img src="bari-bas.jpg" class="bi">
             <div class="caption">
@@ -195,7 +232,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     </div>
 
 
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <div class="thumbnail">
     <img src="suits.jpg" class="bi" id="suits">
             <div class="caption">
@@ -206,6 +243,37 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 </div>
 </div>
 </div>
+
+
+    <div class="col-lg-3" id="news">
+        <div class="thumbnail">
+
+            <div class="caption" >
+
+                   <center>New Collection</center>
+                <table border="2px">
+                <ul id="newsf">
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <li> Embroidery sarees from laxmi collections </li>
+
+
+                    <li> Embroidery sarees from laxmi collections </li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </ul>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>
     <br>
     <br>
@@ -213,10 +281,23 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     <hr>
 
 <div class="info" id="about">
+    <h1><center>About us</center></h1>
     <h2 id="h2">
         Banke Bihari Fashions
     </h2>
 
+    <p id="h2">
+        Banke Bihari Fashions is a fashionable clothing store which aims to excel in its clothing quality with the moto
+        of serving its customers nicely.
+        <br>
+        It was established in 2015 by Mr.Ramavtar Bilotia .
+        <br>
+
+        With only two years of its start ,it has become a name of quality garments among its customers .
+        <br>
+        The store is known for its multivariety clothings for every class.
+
+    </p>
 <ul>
     <li>  A RENOWNED NAME FOR FASHIONABLE CLOTHING</li>
     <br>
@@ -226,7 +307,8 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     <li> EXCELLENT QUALITY GUARANTEED</li>
     <br>
     <li> READ ALL  <a href="terms.html">TERMS AND CONDITIONS</a> </li>
-
+<br>
+    <li>COLLECT YOUR BILL AFTER EVERY PURCHASE</li>
 
 </ul>
     <br>
@@ -303,6 +385,9 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         <!--$('.dropdown-toggle').dropdown();-->
     <!--});-->
 <!--</script>-->
+
+<!--<script src="/frontend.js"></script>-->
+
 </body>
 </html>
 

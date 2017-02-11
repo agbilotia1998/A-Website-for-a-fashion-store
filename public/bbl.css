@@ -8,12 +8,12 @@
 
 #h2{
     margin-top: -200px;
-    margin-left: 280px;
-    color:aqua;
+    margin-left: 340px;
+    color:yellow;
     text-decoration: double;
     text-decoration-style: double;
-    font-size: 43px;
-    font-family: "Bradley Hand ITC";
+    font-size: 40px;
+    font-family: Calibri ;
 }
 
 center{
@@ -26,13 +26,15 @@ input
 {
     margin-left:660px;
     border-radius: 5px;
+    border-width: 8px;
 }
 
 button{
     margin-left:708px;
-    background-color: cornflowerblue;
-    border-color: blue;
+    background-color: #9d9d9d;
+    border-color: black;
     border-radius: 5px;
+
 }
 
 a{
@@ -47,4 +49,5 @@ body{
 }
 h1{
     margin-left:575px;
+    color:black;
 }

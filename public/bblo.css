@@ -60,10 +60,6 @@
 
 }
 
-#facebook{
-    color: #122b40;
-}
-
 #news{
 
     margin-left: 1185px;
@@ -103,10 +99,6 @@
     margin-left: 160px;
 }
 
-.fb-like{
-    margin-top: 15px;
-}
-
 
 
 center{
@@ -124,10 +116,18 @@ hr{
 
     color: red;
     /*line-height: 8px;*/
-    border-width: 20px;
+    border-width: 1px;
 
 }
 
+#span{
+    float: left;
+    padding-top: 17px;
+    font-size: 35px;
+    margin-top: -16px;
+    padding-left: 26px;
+    margin-right: 8px;
+}
 #container{
     margin-left:68px;
     width: 1590px;
@@ -210,7 +210,7 @@ footer{
 }
 
 body{
-         background: snow;
+    background: snow;
 }
 
 div:nth-of-type(1){
@@ -275,6 +275,7 @@ hr{
 .info{
     background-color: #e4b9b9;
     padding-top: 40px;
+    margin-top: 1100px;
 
 }
 
@@ -286,9 +287,9 @@ hr{
 
 
 
-button{
-    background:none;
-}
+  button{
+      background:none;
+  }
 
 ul{
     padding-top: 30px;
@@ -335,7 +336,16 @@ footer {
 
 #nav{
     padding-top: 44px;
-    background-color: #122b40;
+    /*background-color: #122b40;*/
 
 
+}
+#trending{
+    background-color: white;
+    margin-top: 45px;
+    /*text-align: center;*/
+}
+
+#trending>h2{
+    text-align: center;
 }

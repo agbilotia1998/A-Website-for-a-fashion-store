@@ -14,7 +14,7 @@ margin-left: 670px;
 #h2{
     margin-top: -10px;
     margin-left: 150px;
-    color:aqua;
+    color: #9d9d9d;
     text-decoration: ActiveBorder;
 
     font-size: 43px;
@@ -27,12 +27,15 @@ margin-left: 670px;
     text-align: center;
     margin-left:55px;
     color: #ac2925;
+    border-width: 6px;
+    /*border-color: #122b40;*/
 }
 
 #h1{
 
     margin-left:75px;
-    color: aquamarine;
+    color: #9d9d9d;
+    padding-bottom: 11px;
 }
 
 .btn-success{
@@ -43,6 +46,7 @@ margin-left: 670px;
 #shift{
     margin-bottom: 200px;
     margin-left: -10px;
+    background-color: #122b40;
 }
 
 select{
@@ -56,4 +60,6 @@ select{
     margin-left: 115px;
 }
 
+form{
+    margin-top: -37px;
 }

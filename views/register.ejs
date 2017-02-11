@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
  <title>REGISTRATION SUCCESSFUL</title>
 <!-- <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
  <link rel="stylesheet" type="text/css" href="bbl.css">-->
@@ -13,8 +14,69 @@
 
 <body>
 
-<h1> THANKS <%= name%> FOR REGISTERING!! </h1>
 
+<nav class="navbar navbar-default" id="nav">
+ <div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <ul class="nav navbar-nav">
+    <li ><a href="#">Home </a></li>
+    <li><a href="#">Gallery</a></li>
+    <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+      <li><a href="#">Readymade</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Suitings and shirtings</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Sarees</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#"> Choonri</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Bari</a> </li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Suits</a> </li>
+     </ul>
+    </li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#">Privacy policy</a></li>
+   </ul>
+
+   <!--<ul class="nav navbar-nav navbar-right">-->
+   <!--<li><a href="#">Link</a></li>-->
+   <!--<li class="dropdown">-->
+   <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+   <!--<ul class="dropdown-menu">-->
+   <!--<li><a href="#">Action</a></li>-->
+   <!--<li><a href="#">Another action</a></li>-->
+   <!--<li><a href="#">Something else here</a></li>-->
+   <!--<li role="separator" class="divider"></li>-->
+   <!--<li><a href="#">Separated link</a></li>-->
+   <!--</ul>-->
+   <!--</li>-->
+   <!--</ul>-->
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+<h1> Thanks <%= name%> For Registering!! </h1>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script>-->
 
 </body>
 </html>

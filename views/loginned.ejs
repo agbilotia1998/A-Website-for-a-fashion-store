@@ -2,14 +2,283 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bblo.css">
+
     <title>WELCOME</title>
 </head>
 <body>
 
-<h1>
-    WELCOME <%= name %>
+
+
+<nav class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="#">Home </a></li>
+                <li><a href="#">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Readymade</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Suitings and shirtings</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sarees</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"> Choonri</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Bari</a> </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Suits</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+
+
+            <div class="nav navbar-right">
+                <ul class="nav navbar-nav">
+                    <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
+                    <a href="#">
+                        <span id="span" class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+
+                    <!--<li><a href="#"><%= name %></a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= name %> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">My orders</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Submit Feedback</a></li>
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="#"> Choonri</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="#">Bari</a> </li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="#">Suits</a> </li>-->
+                        </ul>
+                    </li>
+                    <li> <a href="#">Log out</a></li>
+
+                </ul>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+</nav>
+
+
+<center>
+<h1 >
+    Welcome <%= name %>
 </h1>
+</center>
 
 
+<div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+            <h2>What You Want to Buy ? ............</h2>
+<br>
+<br>
+<a href="bari.html" class="bi" > BARI</a>
+<br>
+<br>
+<a href="chooni.html" class="bi" > CHOONRI</a>
+<br>
+<br>
+<a href="readymade.html" class="bi" >  READY MADE CLOTHES</a>
+<br>
+<br>
+<a href="sarees.html" class="bi" > SAREES</a>
+<br>
+<br>
+<a href="suitings.html" class="bi" >  SUITINGS AND SHIRTINGS </a>
+<br>
+<br>
+<a href="suits.html" class="bi" >  SUITS</a>
+<br>
+<br>
+            </div>
+
+        <div class="col-lg-4" id="trending"><h2>
+            Trending</h2>
+                <ul>
+                    <li> Embroidery Sarees from Radhika collections</li>
+                    <br>
+                    <li>Raymond dessigner collection</li>
+                    <br>
+                    <li>Levis jean series</li>
+                    <br>
+                    <li>Badasahab exclusive shirts</li>
+                    <br>
+                </ul>
+
+        </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="info" id="about">
+    <h1><center>About us</center></h1>
+    <br>
+    <br>
+    <br>
+    <h2 id="h2">
+        Banke Bihari Fashions
+    </h2>
+
+    <p id="h2">
+        Banke Bihari Fashions is a fashionable clothing store which aims to excel in its clothing quality with the moto
+        of serving its customers nicely.
+        <br>
+        It was established in 2015 by Mr.Ramavtar Bilotia .
+        <br>
+
+        With only two years of its start ,it has become a name of quality garments among its customers .
+        <br>
+        The store is known for its multivariety clothings for every class.
+
+    </p>
+    <ul>
+        <li>  A RENOWNED NAME FOR FASHIONABLE CLOTHING</li>
+        <br>
+
+        <li> FIXED PRICE SHOWROOM   </li>
+        <br>
+        <li> EXCELLENT QUALITY GUARANTEED</li>
+        <br>
+        <li> READ ALL  <a href="terms.html">TERMS AND CONDITIONS</a> </li>
+        <br>
+        <li>COLLECT YOUR BILL AFTER EVERY PURCHASE</li>
+
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+
+</div>
+
+<!--<footer class="navbar-default">-->
+
+
+<!--</footer>-->
+
+<footer id="contact">
+
+
+    <p id="names" >
+    <hr>
+    Contact us :
+    <br>
+    <br>
+    RAMAVTAR BILOTIA (PROPRIETOR)        -  09460734200
+    <br>
+    <br>
+    DINESH KUMAR BILOTIA     -  09414540219
+    <br>
+    <br>
+    MUKESH KUMAR BILOTIA     -
+    <br>
+    <br>
+    SOURABH BILOTIA   -
+    <br>
+    <br>
+    <br>
+    ADDRESS:
+
+    BANKE BIHARI FASHIONS ,NEAR KABUTAR KHANA,<BR>
+    CHIRAWA,(DIST.)JHUNJHUNU,RAJASTHAN
+    <br>
+    <br>
+    <br>
+    Email:bbfashions@gmail.com
+    <br>
+    <br>
+    <br>
+    <br>
+    WEBSIGHT DESIGNED BY :
+    <br>
+    RADA DESIGNERS pvt. ltd.
+    <br>
+    Contact No.<br>
+    07705894165<br>
+    08504030676
+    </p>
+
+
+</footer>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--<script>-->
 </body>
 </html>
