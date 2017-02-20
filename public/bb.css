@@ -1,4 +1,9 @@
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 #header{
 
     /*background-image:url('bb.jpg');*/
@@ -9,19 +14,24 @@
     padding-bottom: 40px;
 }
 
+#footer{
+    font-size: 38px;
+    margin-left: -110px;
+    padding-bottom: 80px;
+}
 
 /* The animation code */
-@keyframes example {
-    /*0%   {opacity: 0.1;}*/
-    /*25%  {opacity: 0.25;}*/
-    /*50%  {opacity: 0.5;}*/
-    /*100% {opacity: 1;}*/
+/*@keyframes example {*/
+    /*!*0%   {opacity: 0.1;}*!*/
+    /*!*25%  {opacity: 0.25;}*!*/
+    /*!*50%  {opacity: 0.5;}*!*/
+    /*!*100% {opacity: 1;}*!*/
 
-    0%{ color:red;}
-    50%{color:yellow;}
-    100%{color:green;}
+    /*0%{ color:red;}*/
+    /*50%{color:yellow;}*/
+    /*100%{color:green;}*/
 
-}
+/*}*/
 
 /* The element to apply the animation to */
 
@@ -41,6 +51,12 @@
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: initial;
+    text-space: 1px;
+    padding-bottom: 13px;
+
+
 }
 
 
@@ -48,7 +64,7 @@
 #h1{
     text-align:center;
     color:red;
-    margin-top: 50px;
+    margin-top: 0px;
     font-size: 70px;
 
 }
@@ -67,9 +83,13 @@
 #news{
 
     margin-left: 1185px;
-    margin-top: -945px;
+    margin-top: -1040px;
 
 
+}
+
+#column{
+    height:602px;
 }
 
 
@@ -90,7 +110,7 @@
     /*height: 40px;*/
 }
 
-#newsf {
+#newsticker {
 
     animation-name: news;
     animation-duration: 5s;
@@ -110,8 +130,8 @@
 
 
 center{
-    font-style: italic;
-    font-size: larger;
+    /*font-style: italic;*/
+    font-size: 29px;
     font-family: "Baskerville Old Face";
     text-decoration: double;
     /*animation-name: example;*/
@@ -143,7 +163,15 @@ marquee{
 
     -moz-text-decoration-color: #122b40;
     text-decoration-style: solid;
+    margin-bottom: -43px;
+    font-size: 17px;
 }
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white !important;
+}
+
+
 #h4{
     margin-top: -16px;
     margin-bottom:50px ;
@@ -178,19 +206,48 @@ marquee{
 #range{
     text-align: center;
     font-size: 50px;
-    font-style: italic;
-    text-decoration:underline;
+    /*font-style: italic;*/
+    /*text-decoration:underline;*/
     color: firebrick;
     /*text-blink: 2s;*/
     margin-left: -295px;
+    font-family: 'Arbutus';
+}
+
+#head1{
+    text-align: center;
+    font-size: 50px;
+    /*font-style: italic;*/
+    /*text-decoration:underline;*/
+    color: firebrick;
+    /*text-blink: 2s;*/
+    margin-left: -10px;
+    font-family: 'Arbutus';
+    margin-top: -51px;
+    padding-bottom: 66px;
 }
 
 footer{
     background-color: #122b40;
     color: white;
     padding-bottom: 70px;
+    font-size: 17px;
 }
 
+/*.dropdown:hover .dropdown-menu {*/
+    /*display: block;*/
+/*}*/
+
+/*.dropdown{*/
+    /*display: none;*/
+/*}*/
+
+.smartmarquee {
+    position: relative;
+    overflow: hidden;
+}
+
+/*.smartmarquee .container { position: absolute; }*/
 
 #clicks{
     background-color: #e4b9b9;
@@ -198,10 +255,17 @@ footer{
     padding-bottom: 24px;
 }
 
+.elements{
+
+    padding-top: 30px;
+    font-size: 18px;
+}
+
 #contents{
-    margin-top: -263px;
+    margin-top: -221px;
     background-color: #FCF8E3;
     padding-top: 122px;
+    margin-left: 9px;
     /*background-color: #f0ad4e;*/
 }
 
@@ -222,8 +286,11 @@ div:nth-of-type(1){
 
 #h2{
     line-height: 42px;
-    font-style: italic;
+    /*font-style: italic;*/
     text-blink: 1s;
+    font-family: 'Arizonia';
+    font-size: 27px;
+    padding-bottom: 100px;
 }
 
 #saree {
@@ -275,7 +342,7 @@ hr{
 .info{
     background-color: #e4b9b9;
     padding-top: 40px;
-
+    margin-right: 66px;
 }
 
 #suits{
@@ -324,6 +391,8 @@ footer {
     padding-top: 20px;
     border-top: 10px solid #332e20;
     padding-left: 75px;
+    margin-left: 83px;
+    margin-right: 81px;
     /*background-color: white;*/
 }
 
@@ -336,6 +405,6 @@ footer {
 #nav{
     padding-top: 44px;
     background-color: #122b40;
-
+    margin-top: -52px;
 
 }

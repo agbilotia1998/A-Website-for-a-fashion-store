@@ -96,8 +96,68 @@ app.get("/confirmation/username/:un",function(req,res){
 });
 
 
+app.get("/loginned/:type",function (req,res){
+
+    var type = (req.params.type);
+    if(type==="bari") {
+        type = "2";
+    }
+
+   else if(type==="chooni") {
+        type = "3";
+    }
+
+   else if(type==="readymade") {
+        type = "1";
+    }
+
+   else if(type==="sarees") {
+        type = "4";
+    }
+
+   else if(type==="suits") {
+        type = "6";
+    }
+
+   else if(type==="suitings") {
+        type = "5";
+    }
+
+    res.render("fashion.ejs", {type: type});
+
+});
 
 
+app.get("/fashion/:type",function (req,res){
+
+    var type = (req.params.type);
+    if(type==="bari") {
+        type = "2";
+    }
+
+    else if(type==="chooni") {
+        type = "3";
+    }
+
+    else if(type==="readymade") {
+        type = "1";
+    }
+
+    else if(type==="sarees") {
+        type = "4";
+    }
+
+    else if(type==="suits") {
+        type = "6";
+    }
+
+    else if(type==="suitings") {
+        type = "5";
+    }
+
+    res.render("fashion.ejs", {type: type});
+
+});
 
 
 app.post("/register",function(req,res)

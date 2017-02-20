@@ -1,41 +1,49 @@
-.center {
 
-
-
-    text-align: center;
-
-}
 
 #h2{
-    margin-top: -200px;
-    margin-left: 340px;
-    color:yellow;
+    margin-top: 111px;
+    margin-left: -270px;
+    color: #761c19;
     text-decoration: double;
     text-decoration-style: double;
     font-size: 40px;
     font-family: Calibri ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 center{
     margin-top: 20px;
-    margin-left: -125px;
+    margin-left: -182px;
     color: red;
 }
 
 input
 {
-    margin-left:660px;
-    border-radius: 5px;
-    border-width: 8px;
+    margin-left: 540px;
+    padding-top: 9px;
+    padding-left: 91px;
+    border-radius: 6px;
+    font-size: 19px;
+    font-style: oblique;
 }
 
-button{
-    margin-left:708px;
+#btn{
+    margin-left: 80px;
     background-color: #9d9d9d;
     border-color: black;
     border-radius: 5px;
 
 }
+
+
+form {
+    margin-left: 618px;
+    margin-top: 39px;
+
+}
+
 
 a{
     color: black;
@@ -47,7 +55,8 @@ body{
     background-repeat: no-repeat;
     margin-left: 60px;
 }
-h1{
-    margin-left:575px;
+#h1{
+    margin-left:559px;
     color:black;
+    margin-top: -66px;
 }

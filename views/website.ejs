@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:fb="http://www.facebook.com/2008/xfbml">
-    <head>
+<html lang="en" xmlns:fb=" http://www.facebook.com/2008/xfbml ">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
         <meta charset="UTF-8">
         <title>A Clothing Store</title>
         <link rel="stylesheet" type="text/css" href="bb.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <meta property="fb:app_id"        content="208143129655109" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+        <meta property="fb:app_id" content="208143129655109" />
         <meta property="og:url"           content="https://www.facebook.com/search/top/?q=banke%20bihari%20fashion" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="A fashion store" />
-
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="A fashion store" />
+        <link href="jquery.announcement.css" rel="stylesheet" type="text/css">
+        <script src="jquery.announcement.js" type="text/javascript"></script>
 
     </head>
-<body>
 
-<div id="fb-root"></div>
+
+<div id="fb-root">  </div>
 <script>
     window.fbAsyncInit = function() {
         FB.init({
@@ -59,19 +62,19 @@
                 <li ><a href="#">Home </a></li>
                 <li><a href="#">Gallery</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Clothings <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Readymade</a></li>
+                        <li><a href="/fashion/readymade">Readymade</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Suitings and shirtings</a></li>
+                        <li><a href="/fashion/suitings">Suitings and shirtings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Sarees</a></li>
+                        <li><a href="/fashion/sarees">Sarees</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"> Choonri</a></li>
+                        <li><a href="/fashion/chooni"> Choonri</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Bari</a> </li>
+                        <li><a href="/fashion/bari">Bari</a> </li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Suits</a> </li>
+                        <li><a href="/fashion/suits">Suits</a> </li>
                     </ul>
                 </li>
 
@@ -80,7 +83,8 @@
                 <li><a href="#">Privacy policy</a></li>
                 <li>
 
-                <div class="fb-like" data-href="https://www.facebook.com/search/top/?q=banke%20bihari%20fashion" data-width="15px" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                <div class="fb-like" data-href="https://www.facebook.com/bankebiharichirawa/" data-width="15px" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+
                 </li>
             </ul>
 
@@ -127,7 +131,8 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     <p>
     <ul>
         <li>
-              DONOT SHARE YOUR LOGIN CREDENTIALS WITH ANYONE
+            <b> DONOT SHARE YOUR LOGIN CREDENTIALS WITH ANYONE</b>
+
         </li>
     </ul>
     <div class="butt">
@@ -164,7 +169,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
             <div class="thumbnail">
             <img src="/Ready made/rm3.jpeg">
                 <div class="caption">
-                    <a href="readymade.html" > EXPLORE FOR READY MADE CLOTHINGS</a>
+                    <a href="/fashion/readymade" > EXPLORE FOR READY MADE CLOTHINGS</a>
                 </div>
             </div>
         </div>
@@ -175,7 +180,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
                 <img src="/Sarees/s11.jpeg">
                 <div class="caption">
 
-                    <a href="sarees.html" id="saree"> EXPLORE FOR SAREES</a>
+                    <a href="/fashion/sarees" id="saree"> EXPLORE FOR SAREES</a>
                 </div>
             </div>
         </div>
@@ -186,7 +191,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
                 <div class="thumbnail">
     <img src="/Shirtings/ss10.jpeg">
     <div class="caption">
-    <a href="suitings.html" > EXPLORE FOR SUITINGS AND SHIRTINGS</a>
+    <a href="/fashion/suitings" > EXPLORE FOR SUITINGS AND SHIRTINGS</a>
         </div>
                 </div>
             </div>
@@ -217,7 +222,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         <div class="thumbnail">
     <img src="/Choonri/c6.jpeg" class="bi">
             <div class="caption">
-    <a href="chooni.html" class="bi" > EXPLORE FOR CHOONRI</a>
+    <a href="/fashion/chooni" class="bi" > EXPLORE FOR CHOONRI</a>
     </div>
         </div>
     </div>
@@ -226,7 +231,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         <div class="thumbnail">
     <img src="bari-bas.jpg" class="bi">
             <div class="caption">
-    <a href="bari.html" class="bi" > EXPLORE FOR BARI</a>
+    <a href="/fashion/bari" class="bi" > EXPLORE FOR BARI</a>
     </div>
         </div>
     </div>
@@ -236,7 +241,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         <div class="thumbnail">
     <img src="suits.jpg" class="bi" id="suits">
             <div class="caption">
-    <a href="suits.html" class="bi" > EXPLORE FOR SUITS</a>
+    <a href="/fashion/suits" class="bi" > EXPLORE FOR SUITS</a>
     </div>
 
 
@@ -248,40 +253,45 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     <div class="col-lg-3" id="news">
         <div class="thumbnail">
 
-            <div class="caption" >
+            <div class="caption" id="column" >
 
                    <center>New Collection</center>
-                <table border="2px">
-                <ul id="newsf">
-                    <li> Embroidery sarees from laxmi collections </li>
-                    <li> Embroidery sarees from laxmi collections </li>
-                    <li> Embroidery sarees from laxmi collections </li>
-                    <li> Embroidery sarees from laxmi collections </li>
-                    <li> Embroidery sarees from laxmi collections </li>
-                    <li> Embroidery sarees from laxmi collections </li>
+                        <table border="2px">
 
 
-                    <li> Embroidery sarees from laxmi collections </li>
+                    <div class="smartmarquee example">
+                        <ul class="container">
+                            <li class="elements"> Embroidery sarees from Laxmi collections </li>
+                            <li class="elements"> Embroidery sarees from Radhika collections </li>
+                            <li class="elements"> Designer sarees from NRC collections </li>
+                            <li class="elements"> New range of Raymond shirtings </li>
+                            <li class="elements"> New Suits collection from SS cottons. </li>
+                            <li class="elements"> Wide range of Bombay Dyeing Bedsheets</li>
+                        </ul>
+                    </div>
+
+
+
                     <br>
                     <br>
                     <br>
                     <br>
                     <br>
 
-                </ul>
+
                 </table>
             </div>
         </div>
     </div>
 
-</div>
+
     <br>
     <br>
     <br>
     <hr>
 
 <div class="info" id="about">
-    <h1><center>About us</center></h1>
+    <h1 ><center id="head1">About us</center></h1>
     <h2 id="h2">
         Banke Bihari Fashions
     </h2>
@@ -290,7 +300,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         Banke Bihari Fashions is a fashionable clothing store which aims to excel in its clothing quality with the moto
         of serving its customers nicely.
         <br>
-        It was established in 2015 by Mr.Ramavtar Bilotia .
+        It was established in 2015 by <b>Mr.Ramavtar Bilotia</b> .
         <br>
 
         With only two years of its start ,it has become a name of quality garments among its customers .
@@ -299,6 +309,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 
     </p>
 <ul>
+    <b>
     <li>  A RENOWNED NAME FOR FASHIONABLE CLOTHING</li>
     <br>
 
@@ -309,7 +320,7 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
     <li> READ ALL  <a href="terms.html">TERMS AND CONDITIONS</a> </li>
 <br>
     <li>COLLECT YOUR BILL AFTER EVERY PURCHASE</li>
-
+    </b>
 </ul>
     <br>
     <br>
@@ -333,7 +344,9 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
 
             <p id="names" >
             <hr>
+    <center id="footer">
             Contact us :
+    </center>
             <br>
             <br>
             RAMAVTAR BILOTIA (PROPRIETOR)        -  09460734200
@@ -380,6 +393,8 @@ For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery.smartmarquee.js"></script>
+<script src="main.js"></script>
 <!--<script>-->
     <!--$(document).ready(function () {-->
         <!--$('.dropdown-toggle').dropdown();-->
