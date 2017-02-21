@@ -2,7 +2,7 @@
 
 #h2{
     margin-top: 111px;
-    margin-left: -270px;
+    margin-left: -206px;
     color: #761c19;
     text-decoration: double;
     text-decoration-style: double;
@@ -27,11 +27,12 @@ input
     border-radius: 6px;
     font-size: 19px;
     font-style: oblique;
+    border-top: bisque;
 }
 
 #btn{
     margin-left: 80px;
-    background-color: #9d9d9d;
+    background-color: #e4b9b9;
     border-color: black;
     border-radius: 5px;
 
@@ -56,7 +57,27 @@ body{
     margin-left: 60px;
 }
 #h1{
-    margin-left:559px;
+    margin-left:565px;
     color:black;
-    margin-top: -66px;
+    margin-top: 0px;
+}
+
+#nav{
+    padding-top: 44px;
+    /*background-color: #122b40;*/
+    margin-top: -11px;
+    opacity: 0.9;
+}
+
+
+#main{
+    /*background-image:url{'t8.jpg'};*/
+    background-image:url('t8.jpg');
+    background-size: 100%;
+    margin-top: -110px;
+    height: 1012px;
+}
+
+.fb-like{
+    margin-top: 15px;
 }

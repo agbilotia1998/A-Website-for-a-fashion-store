@@ -6,12 +6,12 @@ html, body {
 
 #header{
 
-    /*background-image:url('bb.jpg');*/
+    background-image:url('divback.jpg');
     /*background-size: 80px 60px ;*/
-    background-color: bisque;
+    /*background-color: AppWorkspace; */
     padding-top: 50px;
     margin-top: -40px;
-    padding-bottom: 40px;
+    padding-bottom: 428px;
 }
 
 #footer{
@@ -63,8 +63,8 @@ html, body {
 
 #h1{
     text-align:center;
-    color:red;
-    margin-top: 0px;
+
+    margin-top: 213px;
     font-size: 70px;
 
 }
@@ -167,9 +167,7 @@ marquee{
     font-size: 17px;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: white !important;
-}
+
 
 
 #h4{
@@ -208,7 +206,7 @@ marquee{
     font-size: 50px;
     /*font-style: italic;*/
     /*text-decoration:underline;*/
-    color: firebrick;
+
     /*text-blink: 2s;*/
     margin-left: -295px;
     font-family: 'Arbutus';
@@ -219,12 +217,13 @@ marquee{
     font-size: 50px;
     /*font-style: italic;*/
     /*text-decoration:underline;*/
-    color: firebrick;
+
     /*text-blink: 2s;*/
     margin-left: -10px;
     font-family: 'Arbutus';
     margin-top: -51px;
     padding-bottom: 66px;
+    text-transform: uppercase;
 }
 
 footer{
@@ -232,6 +231,8 @@ footer{
     color: white;
     padding-bottom: 70px;
     font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 180px;
 }
 
 /*.dropdown:hover .dropdown-menu {*/
@@ -250,9 +251,11 @@ footer{
 /*.smartmarquee .container { position: absolute; }*/
 
 #clicks{
-    background-color: #e4b9b9;
-    margin-top: 0px;
+    background-color: black;
+    margin-top: -275px;
     padding-bottom: 24px;
+    opacity: 0.7;
+    color: white;
 }
 
 .elements{
@@ -263,10 +266,11 @@ footer{
 
 #contents{
     margin-top: -221px;
-    background-color: #FCF8E3;
+    background-color: #9D9D9D;
     padding-top: 122px;
     margin-left: 9px;
-    /*background-color: #f0ad4e;*/
+    color: black;
+    opacity: 0.9;
 }
 
 #pad{
@@ -340,9 +344,11 @@ hr{
 }
 
 .info{
-    background-color: #e4b9b9;
+    background-color: black;
     padding-top: 40px;
     margin-right: 66px;
+    opacity: 0.5;
+    color: white;
 }
 
 #suits{
@@ -387,12 +393,18 @@ ul{
 
     margin-left: 40px;
 }
+
+div:nth-of-type(1) {
+    margin-top: 12px;
+}
+
 footer {
     padding-top: 20px;
     border-top: 10px solid #332e20;
     padding-left: 75px;
     margin-left: 83px;
     margin-right: 81px;
+    margin-top: 200px;
     /*background-color: white;*/
 }
 
@@ -404,7 +416,7 @@ footer {
 
 #nav{
     padding-top: 44px;
-    background-color: #122b40;
+    /*background-color: #122b40;*/
     margin-top: -52px;
-
+    opacity: 0.9;
 }

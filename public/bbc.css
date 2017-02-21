@@ -12,30 +12,34 @@ margin-left: 670px;
 
 
 #h2{
-    margin-top: -10px;
-    margin-left: 150px;
-    color: #9d9d9d;
-    text-decoration: ActiveBorder;
-
+    margin-top: 53px;
+    margin-left: 250px;
+    color: #9D9D9D;
+    text-decoration: none #B4B4B4;
     font-size: 43px;
-    font-family: "Bradley Hand ITC";
+    font-family: "Barrio",cursive;
+    padding-bottom: -42px;
+    margin-bottom: -33px;
 }
 
 #ok{
 
     width: 30%;
-    text-align: center;
+    padding-left: 182px;
+    text-transform: uppercase;
     margin-left:55px;
     color: #ac2925;
-    border-width: 6px;
+
     /*border-color: #122b40;*/
 }
 
 #h1{
 
-    margin-left:75px;
+    margin-left:40px;
     color: #9d9d9d;
-    padding-bottom: 11px;
+    padding-bottom: 29px;
+    margin-top: -6px;
+    font-family: 'Barrio', cursive;
 }
 
 .btn-success{
@@ -62,4 +66,14 @@ select{
 
 form{
     margin-top: -37px;
+}
+
+#nav{
+    padding-top: 44px;
+    margin-top: -115px;
+    margin-left: -126px;
+    padding-bottom: -6px;
+}
+.fb-like{
+    /*margin-top: 15px;*/
 }
