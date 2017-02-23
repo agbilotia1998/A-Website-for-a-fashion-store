@@ -15,12 +15,19 @@ var bbSchema=new mongoose.Schema({
     username:String,
     password:String,
     email:String,
-    confirmation:String
+    confirmation:String,
+    orders:[Number]
+});
+
+var bookSchema=new mongoose.Schema({
+    id:Number,
+    amount:Number,
+    price:Number
 });
 
 
 var newacc =mongoose.model("bbl",bbSchema);
-
+var bookings=mongoose.model("booked",bookSchema);
 
 
 app.use(express.static("public"));
@@ -48,6 +55,8 @@ res.render("login.ejs",{a:"0"});
 
 }
 );
+
+
 
 app.post("/loginned",function (req,res) {
 
@@ -229,24 +238,16 @@ app.post("/register",function(req,res)
 
         })
 
-
-
-
         //  var name= req.body.name;
         // var username= req.body.username;
         // var password= req.body.password;
         // var email= req.body.email;
-
-
-
-
-
-
         /*res.redirect("/register");*/
 
-    }
+    });
 
-);
+
+
 app.listen(3000,function()
 {
     console.log("SERVER STARTED");
