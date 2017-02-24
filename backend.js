@@ -7,12 +7,14 @@ var express=require("express"),
     bodyParser=require("body-parser"),
     mongoose = require("mongoose");
 var nodemailer = require('nodemailer');
-var cred = require('./mail.js');
+//var cred = require('./mail.js');
+var cred = process.env.cred;
+var x = process.env.x;
 // var x = require('./mail.js');
 // var y = require('./mail.js');
 
-// mongoose.connect("mongodb://localhost/bb");
-mongoose.connect(cred.x);
+ //mongoose.connect("mongodb://localhost/bb");
+mongoose.connect(x.toString());
 
 var bbSchema=new mongoose.Schema({
     name:String,
@@ -198,7 +200,7 @@ app.post("/register",function(req,res)
                         //document.write('<scr'+'ipt type="text/javascript" src="mail.js" ></scr'+'ipt>');
 // create reusable transporter object using the default SMTP transport
                  //        transporter = nodemailer.createTransport('smtps://agbilotia1998%40gmail.com:rajeshgupta@smtp.gmail.com');
-                            transporter=nodemailer.createTransport(cred.cred);
+                            transporter=nodemailer.createTransport(cred.toString());
 // setup e-mail data with unicode symbols
                         var mailOptions = {
                             from: '"Banke Bihari Fashions <agbilotia1998@gmail.com>', // sender address
