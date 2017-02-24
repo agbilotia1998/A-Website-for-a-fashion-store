@@ -4,7 +4,8 @@
   "description": "simple package.json",
   "main": "grader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend.js"
   },
   "author": "Ayush",
   "license": "ISC",

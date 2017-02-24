@@ -8,7 +8,11 @@ var express=require("express"),
     mongoose = require("mongoose");
 var nodemailer = require('nodemailer');
 var cred = require('./mail.js');
-mongoose.connect("mongodb://localhost/bb");
+// var x = require('./mail.js');
+// var y = require('./mail.js');
+
+// mongoose.connect("mongodb://localhost/bb");
+mongoose.connect(cred.x);
 
 var bbSchema=new mongoose.Schema({
     name:String,
