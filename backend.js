@@ -13,6 +13,9 @@ var x = process.env.x;
 // var x = require('./mail.js');
 // var y = require('./mail.js');
 
+NODE_MODULES_CACHE=false;
+
+
  //mongoose.connect("mongodb://localhost/bb");
 mongoose.connect(x.toString());
 
