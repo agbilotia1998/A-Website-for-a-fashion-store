@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a8f4204-f95b-4638-81e1-7bce7bb5c017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.js" afterPath="$PROJECT_DIR$/backend.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,8 +93,8 @@
       <file leaf-file-name="backend.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="440">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -184,8 +185,8 @@
         <option value="$PROJECT_DIR$/public/ajax.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/mail.js" />
-        <option value="$PROJECT_DIR$/backend.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/backend.js" />
       </list>
     </option>
   </component>
@@ -571,12 +572,12 @@
       <workItem from="1487779466943" duration="2816000" />
       <workItem from="1487865916929" duration="5570000" />
       <workItem from="1487884020231" duration="107000" />
-      <workItem from="1487962976446" duration="7417000" />
+      <workItem from="1487962976446" duration="8085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328357000" />
+    <option name="totallyTimeSpent" value="329025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -827,14 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -851,10 +844,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="440">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding />
         </state>
       </provider>

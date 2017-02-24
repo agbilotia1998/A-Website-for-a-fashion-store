@@ -1,7 +1,7 @@
 /**
  * Created by AYUSH on 1/11/2017.
  */
-
+NODE_MODULES_CACHE=false;
 var express=require("express"),
     app=express(),
     bodyParser=require("body-parser"),
@@ -13,11 +13,12 @@ var x = process.env.x;
 // var x = require('./mail.js');
 // var y = require('./mail.js');
 
-NODE_MODULES_CACHE=false;
+
 
 
  //mongoose.connect("mongodb://localhost/bb");
-mongoose.connect(x.toString());
+ mongoose.connect(x.toString());
+//mongoose.connect("mongodb://RADAdesigners:ramavtarbilotia@ds161039.mlab.com:61039/bankebiharifashions");
 
 var bbSchema=new mongoose.Schema({
     name:String,
