@@ -258,7 +258,9 @@ app.post("/register",function(req,res)
 
 
 
-app.listen(5000,function()
+app.listen(process.env.PORT || 5000,function()
 {
     console.log("SERVER STARTED");
 });
+
+// app.set('port', (process.env.PORT || 5000));
