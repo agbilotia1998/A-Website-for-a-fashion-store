@@ -6,7 +6,7 @@ html, body {
 
 #header{
 
-    background-image:url('divback.jpg');
+    background-image:url('divback6.jpg');
     /*background-size: 80px 60px ;*/
     /*background-color: AppWorkspace; */
     padding-top: 50px;
@@ -90,6 +90,7 @@ html, body {
 
 #column{
     height:602px;
+    background:url("divback7.jpg");
 }
 
 
@@ -107,6 +108,7 @@ html, body {
 .thumbnail .caption {
     padding: 9px;
     color: #333;
+    margin-top: 0px;
     /*height: 40px;*/
 }
 
@@ -210,6 +212,7 @@ marquee{
     /*text-blink: 2s;*/
     margin-left: -295px;
     font-family: 'Arbutus';
+    color: saddlebrown;
 }
 
 #head1{
@@ -233,6 +236,7 @@ footer{
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 180px;
+    opacity: 0.8;
 }
 
 /*.dropdown:hover .dropdown-menu {*/
@@ -251,10 +255,10 @@ footer{
 /*.smartmarquee .container { position: absolute; }*/
 
 #clicks{
-    background-color: black;
+    background-color: #8a6d3b;
     margin-top: -275px;
     padding-bottom: 24px;
-    opacity: 0.7;
+    opacity: 0.8;
     color: white;
 }
 
@@ -265,12 +269,15 @@ footer{
 }
 
 #contents{
-    margin-top: -221px;
-    background-color: #9D9D9D;
+    margin-top: -158px;
+    /*background-color: #9D9D9D;*/
+    background:url("divback5.jpg") ;
     padding-top: 122px;
     margin-left: 9px;
     color: black;
     opacity: 0.9;
+    /*background-size:cover ;*/
+    background-size: 100%;
 }
 
 #pad{
@@ -344,11 +351,12 @@ hr{
 }
 
 .info{
-    background-color: black;
+    background-color: #2a2a2a;
     padding-top: 40px;
     margin-right: 66px;
-    opacity: 0.5;
+
     color: white;
+    opacity: 0.8;
 }
 
 #suits{
@@ -419,4 +427,5 @@ footer {
     /*background-color: #122b40;*/
     margin-top: -52px;
     opacity: 0.9;
+    background-color: #2a2a2a;
 }

@@ -8,7 +8,7 @@ var express=require("express"),
     mongoose = require("mongoose");
 var nodemailer = require('nodemailer');
 //var cred = require('./mail.js');
-var cred = process.env.cred;
+var cred= process.env.cred;
 var x = process.env.x;
 // var x = require('./mail.js');
 // var y = require('./mail.js');
@@ -235,7 +235,6 @@ app.post("/register",function(req,res)
 
                         });
                     }
-
                     else{
                         res.render("create.ejs",{b:"0"});
                     }

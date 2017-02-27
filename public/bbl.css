@@ -11,6 +11,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    padding-top: 13px;
 }
 
 center{
@@ -22,26 +23,36 @@ center{
 input
 {
     margin-left: 540px;
-    padding-top: 9px;
-    padding-left: 91px;
+    padding-top: 2px;
+    padding-left: 99px;
     border-radius: 6px;
     font-size: 19px;
     font-style: oblique;
     border-top: bisque;
+    height: 40px;
+    width: 300px;
 }
 
 #btn{
-    margin-left: 80px;
-    background-color: #e4b9b9;
-    border-color: black;
+    margin-left: 5px;
+    background-color: #E4B9B9;
+    border-color: #000;
     border-radius: 5px;
+    height: 39px;
+    width: 294px;
+    margin-top: -40px;
 
+}
+
+#pass{
+    margin-top: 9px;
 }
 
 
 form {
-    margin-left: 618px;
+    margin-left: 598px;
     margin-top: 39px;
+    font-size: 22px;
 
 }
 
@@ -57,7 +68,7 @@ body{
     margin-left: 60px;
 }
 #h1{
-    margin-left:565px;
+    margin-left:556px;
     color:black;
     margin-top: 0px;
 }
