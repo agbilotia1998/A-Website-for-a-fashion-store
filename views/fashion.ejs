@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-
+        Fashion Store
     </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -31,7 +31,7 @@
     <% if(type!="gallery"){%>
 PRICE:<%= data.price %>
 <br>
-<button id="btn" class="btn btn-default btn-lg" type="submit" >BOOK NOW! </button>
+<button id="<%= data.id%>" class="btn btn-default btn-lg" type="submit" >BOOK NOW! </button>
     <%}%>
 </div>
 </div>
@@ -46,15 +46,40 @@ PRICE:<%= data.price %>
 
 
 
-
+<script type="ajax.js"></script>
 <script src="/jquery-3.1.1.min.js"></script>
 <script
         src="https://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $("button").click(function (){
+        var id=$(this).attr('id');
+        //console.log(id);
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            url: 'http://localhost:5000/loginned/:un/book/'+id,
+//            data: {
+//            "success": "Updated Successfully", "status": 200
+//
+//              //  'id':$(this).attr('id')
+//            //},
+//            //     // headers:{
+//                //       //   'Accept':'application/vnd.github.v3+json'
+//            },
+            success: function () {
+                $("#"+id).text("BOOKED");
+            },
+            error: function (data) {
+                $(this).text("BOOKED");
+            }
+        });
+    });
 
-<script  type="text/javascript" src="C:\Users\AYUSH\WebstormProjects\ayush\public\ajax.js"></script>
+</script>
+
 
 </body>
 </html>

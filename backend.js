@@ -5,6 +5,7 @@ NODE_MODULES_CACHE=false;
 var express=require("express"),
     admin=require("node-django-admin"),
     app=express(),
+    path = require('path'),
     bodyParser=require("body-parser"),
     mongoose = require("mongoose"),
     Schema = mongoose.Schema,
@@ -55,6 +56,8 @@ app.use(require("express-session")({
 
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
  // passport.serializeUser(User.serialiseUser());
  // passport.deserializeUser(User.deserialiseUser());
  // passport.use(new LocalStrategy(User.authenticate()));
@@ -208,7 +211,7 @@ app.get("/fashion/:type",function (req,res){
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
             res.render("fashion.ejs",{datas: bb,type:type});
-             //console.log(datas.price);
+             //console.log(bb[0].id);
         });
         type = "4";
     }
@@ -231,6 +234,25 @@ app.get("/fashion/:type",function (req,res){
     });
         }
 });
+
+app.post("/loginned/:un/book/:id",function(req,res){
+    var id = req.params.id;
+    //console.log(id);
+    bookings.findOne({_id:id},function (err,bb){
+        var amount=(bb.amount)-1;
+        bookings.update({_id:id},{$set:{amount:amount}},function (err,updated) {
+            if(err)
+                console.log(err);
+            else {
+                res.json({success : "Updated Successfully", status : 200});
+                //res.send("Booked");
+                //console.log(bb.amount);
+            }
+        });
+
+    });
+
+ });
 
 
 app.post("/register",function(req,res)
