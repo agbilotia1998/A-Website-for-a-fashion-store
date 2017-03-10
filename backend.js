@@ -145,38 +145,38 @@ app.get("/loginned/:type",function (req,res){
     }
     else if(type==="chooni") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
         });
         type = "3";
     }
     else if(type==="readymade") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
         });
         type = "1";
     }
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
             //console.log(datas.price);
         });
         type = "4";
     }
     else if(type==="suits") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
         });
         type = "6";
     }
     else if(type==="suitings") {
         bookings.find({category: type}, function (err, bb) {
-            res.render("fashion.ejs", {datas: bb});
+            res.render("fashion.ejs", {datas: bb,type:type});
         });
         type = "5";
     }
     else if(type==="gallery"){
             bookings.find({category:type},function(err,bb){
-                res.render("fashion.ejs",{datas: bb});
+                res.render("fashion.ejs",{datas: bb,type:type});
             });
     }});
 
@@ -188,45 +188,46 @@ app.get("/fashion/:type",function (req,res){
 
     if(type==="bari") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb});
+            res.render("fashion.ejs",{datas:bb,type:type});
         });
         type = "2";
     }
     else if(type==="chooni") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
         });
         type = "3";
     }
     else if(type==="readymade") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
 
         });
         type = "1";
     }
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
              //console.log(datas.price);
         });
         type = "4";
     }
     else if(type==="suits") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb});
+            res.render("fashion.ejs",{datas:bb,type:type});
         });
         type = "6";
     }
     else if(type==="suitings") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type});
         });
         type = "5";
     }
     else if(type==="gallery"){
         bookings.find({category:type},function(err,bb){
             res.render("fashion.ejs",{datas:bb,type:type});
+            //console.log(type);
     });
         }
 });
