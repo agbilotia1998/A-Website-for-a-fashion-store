@@ -448,7 +448,14 @@ ul{
 
 div:nth-of-type(1) {
     margin-top: 12px;
+
 }
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+}
+
+
 
 footer {
     padding-top: 20px;

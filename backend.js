@@ -3,38 +3,31 @@
  */
 NODE_MODULES_CACHE=false;
 var express=require("express"),
+    admin=require("node-django-admin"),
     app=express(),
     bodyParser=require("body-parser"),
     mongoose = require("mongoose"),
-    Schema = mongoose.Schema;
-var nodemailer = require('nodemailer');
-var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-//var cred = require('./mail.js');
-var cred= process.env.cred;
+    Schema = mongoose.Schema,
+    nodemailer = require('nodemailer'),
+    sg = require('sendgrid')(process.env.SENDGRID_API_KEY),
+    passport=require("passport"),
+    LocalStrategy=require("passport-local");
+   // User=require("./models/user");
 var x = process.env.x;
-// var y = process.env.y;
-// var x = require('./mail.js');
-// var y = require('./mail.js');
-
-
-// Bootstrap admin site
-// admin.config(app, mongoose, '/admin');
+mongoose.Promise = global.Promise;
 
  //mongoose.connect("mongodb://localhost/bb");
 //mongoose.connect("mongodb://localhost/book");
  mongoose.connect(x.toString());
-// mongoose.connect(y.toString());
-//mongoose.connect("mongodb://RADAdesigners:ramavtarbilotia@ds161039.mlab.com:61039/bankebiharifashions");
 
 var bookSchema=new mongoose.Schema({
     category:String,
-    items:[{
-        name:String,
-        id:Number,
-        amount:Number,
-        price:Number}]
-});
+    name:String,
+    price:Number,
+    amount:Number,
+    source:String
 
+});
 
 var bbSchema=new mongoose.Schema({
     name:String,
@@ -48,13 +41,23 @@ var bbSchema=new mongoose.Schema({
 
 
 var newacc =mongoose.model("bbl",bbSchema);
-var bookings=mongoose.model("booked",bookSchema);
+var bookings=mongoose.model("book",bookSchema);
 
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(require("express-session")({
+    secret:"Fashion is Us",
+    resave:false,
+    saveUninitialized:false
+}));
 
+app.use(passport.initialize());
+app.use(passport.session());
+ // passport.serializeUser(User.serialiseUser());
+ // passport.deserializeUser(User.deserialiseUser());
+ // passport.use(new LocalStrategy(User.authenticate()));
 
 
 app.get("/",function (req,res) {
@@ -132,71 +135,115 @@ app.get("/confirmation/username/:un",function(req,res){
 app.get("/loginned/:type",function (req,res){
 
     var type = (req.params.type);
+    var datas=[];
+
     if(type==="bari") {
+        bookings.find({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "2";
     }
-
-   else if(type==="chooni") {
+    else if(type==="chooni") {
+        bookings.findOne({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "3";
     }
-
-   else if(type==="readymade") {
+    else if(type==="readymade") {
+        bookings.findOne({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "1";
     }
-
-   else if(type==="sarees") {
+    else if(type==="sarees") {
+        bookings.find({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+            //console.log(datas.price);
+        });
         type = "4";
     }
-
-   else if(type==="suits") {
+    else if(type==="suits") {
+        bookings.findOne({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "6";
     }
-
-   else if(type==="suitings") {
+    else if(type==="suitings") {
+        bookings.findOne({category: type}, function (err, bb) {
+            datas.push(bb);
+            res.render("fashion.ejs", {datas: bb});
+        });
         type = "5";
     }
-
-    res.render("fashion.ejs", {type: type});
-
-});
+    else if(type==="gallery"){
+            bookings.findOne({category:type},function(err,bb){
+                datas.push(bb);
+                res.render("fashion.ejs",{datas: bb});
+            });
+    }});
 
 
 app.get("/fashion/:type",function (req,res){
 
     var type = (req.params.type);
+    var datas=[];
+
     if(type==="bari") {
+        bookings.find({category:type},function(err,bb){
+            res.render("fashion.ejs",{datas:bb});
+        });
         type = "2";
     }
-
     else if(type==="chooni") {
+        bookings.findOne({category:type},function(err,bb){
+            datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "3";
     }
-
     else if(type==="readymade") {
+        bookings.find({category:type},function(err,bb){
+            res.render("fashion.ejs",{datas: bb});
+
+        });
         type = "1";
     }
-
     else if(type==="sarees") {
+        bookings.find({category:type},function(err,bb){
+            console.log(bb);
+            res.render("fashion.ejs",{datas: bb});
+             //console.log(datas.price);
+        });
         type = "4";
     }
-
     else if(type==="suits") {
+        bookings.findOne({category:type},function(err,bb){
+            res.render("fashion.ejs",{datas:bb});
+        });
         type = "6";
     }
-
     else if(type==="suitings") {
+        bookings.findOne({category:type},function(err,bb){
+             datas.push(bb);
+            res.render("fashion.ejs",{datas: bb});
+        });
         type = "5";
     }
-
-    res.render("fashion.ejs", {type: type});
-
+    else if(type==="gallery"){
+        bookings.findOne({category:type},function(err,bb){
+            res.render("fashion.ejs",{datas:bb});
+    });
+        }
 });
 
 
 app.post("/register",function(req,res)
     {
-
-
         var details={
             name:req.body.name,
             username: req.body.username,
@@ -346,7 +393,65 @@ app.post("/register",function(req,res)
 
     });
 
+//admin.config(app, mongoose, '/admin');
+//
+app.get("/logout",function (req,res) {
+   req.logout();
+   res.redirect("/");
+});
 
+app.get("/admin",function (req,res) {
+  res.render("admin.ejs");
+});
+
+app.post("/admin",function (req,res) {
+   var adminname=req.body.username;
+   var adminpass=req.body.password;
+   if(adminname==="RADA")
+   {
+       if(adminpass==="OK")
+       {
+           res.render("add.ejs");
+       }
+
+       else{
+           res.redirect("/admin");
+       }
+
+   }
+
+   else{
+       res.redirect("/admin");
+   }
+});
+
+app.get("/admin/:add",function(req,res){
+     var addTo=req.params.add;
+    // console.log(addTo);
+    res.render("addform.ejs",{addTo:addTo});
+
+});
+
+app.post("/admin/:add",function(req,res){
+    var addTo=(req.params.add);
+        //console.log(addTo);
+    var ADD = {
+         category:addTo,
+         name:req.body.name,
+         price:req.body.price,
+         amount:req.body.amount,
+         source:req.body.source
+};
+    bookings.findOne({category:addTo},function (err,bb) {
+        //bb.items.push(ADD);
+        bookings.create(ADD);
+        res.send("Added Succesfully");
+        //console.log(bb.items);
+    });
+    //res.render("addform.ejs");
+
+});
+//
 
 app.listen(process.env.PORT || 5000,function()
 {
