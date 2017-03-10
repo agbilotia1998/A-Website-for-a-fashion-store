@@ -226,7 +226,7 @@ app.get("/fashion/:type",function (req,res){
     }
     else if(type==="gallery"){
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb});
+            res.render("fashion.ejs",{datas:bb,type:type});
     });
         }
 });

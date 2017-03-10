@@ -22,13 +22,17 @@
 
 <div class="thumbnail">
     <h4>
-        <%= data.name %>
+        <% if(type!="gallery"){%>
+            <%= data.name %>
+        <%}%>
     </h4>
 <img src="<%= data.source%>">
 <div class="caption">
+    <% if(type!="gallery"){%>
 PRICE:<%= data.price %>
 <br>
 <button id="btn" class="btn btn-default btn-lg" type="submit" >BOOK NOW! </button>
+    <%}%>
 </div>
 </div>
 </div>
