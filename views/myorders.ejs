@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="bblo.css">
-
-
-    <title>WELCOME</title>
+    <meta property="fb:app_id" content="208143129655109" />
+    <meta property="og:url"           content="https://www.facebook.com/search/top/?q=banke%20bihari%20fashion" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A fashion store" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>
+        My orders
+    </title>
 </head>
 <body>
-
 
 
 <nav class="navbar navbar-default" id="nav">
@@ -35,17 +34,17 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/loginned/<%=username%>/readymade">Readymade</a></li>
+                        <li><a href="/loginned/readymade">Readymade</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%=username%>/suitings">Suitings and shirtings</a></li>
+                        <li><a href="/loginned/suitings">Suitings and shirtings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%=username%>/sarees">Sarees</a></li>
+                        <li><a href="/loginned/sarees">Sarees</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%=username%>/chooni"> Choonri</a></li>
+                        <li><a href="/loginned/chooni"> Choonri</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/bari<%=username%>/">Bari</a> </li>
+                        <li><a href="/loginned/bari">Bari</a> </li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%=username%>/suits">Suits</a> </li>
+                        <li><a href="/loginned/suits">Suits</a> </li>
                     </ul>
                 </li>
                 <li><a href="/#about">About Us</a></li>
@@ -61,19 +60,18 @@
                         <span id="span" class="glyphicon glyphicon-shopping-cart"></span>
                     </a>
 
-                    <!--<li><a href="#"><%= name %></a></li>-->
+
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= name %> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= info.name %> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/loginned/<%= username %>/myaccount">My account</a></li>
+                            <li><a href="/loginned/<%= info.username %>/myaccount">My account</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="/loginned/<%= username %>/myorders">My orders</a></li>
+                            <li><a href="/loginned/<%= info.username %>/myorders">My orders</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Submit Feedback</a></li>
                         </ul>
                     </li>
                     <li> <a href="/logout">Log out</a></li>
-
                 </ul>
             </div>
         </div><!-- /.navbar-collapse -->
@@ -81,63 +79,17 @@
 
 </nav>
 
-
-<center>
-<h1 >
-    Welcome <%= name %>
+<h1>
+    Your Orders
 </h1>
-</center>
 
-
-<div class="container">
-
-        <div class="row">
-            <div class="col-lg-8">
-            <h2>What You Want to Buy ? ............</h2>
-<br>
-<br>
-<a href="/loginned/<%=username%>/bari" class="bi" > BARI</a>
-<br>
-<br>
-<a href="/loginned/<%=username%>/chooni" class="bi" > CHOONRI</a>
-<br>
-<br>
-<a href="/loginned/<%=username%>/readymade" class="bi" >  READY MADE CLOTHES</a>
-<br>
-<br>
-<a href="/loginned/<%=username%>/sarees" class="bi" > SAREES</a>
-<br>
-<br>
-<a href="/loginned/<%=username%>/suitings" class="bi" >  SUITINGS AND SHIRTINGS </a>
-<br>
-<br>
-<a href="/loginned/<%=username%>/suits" class="bi" >  SUITS</a>
-<br>
-<br>
-            </div>
-
-        <div class="col-lg-4" id="trending"><h2>
-            Trending</h2>
-                <ul>
-                    <li> Embroidery Sarees from Radhika collections</li>
-                    <br>
-                    <li>Raymond dessigner collection</li>
-                    <br>
-                    <li>Levis jean series</li>
-                    <br>
-                    <li>Badasahab exclusive shirts</li>
-                    <br>
-                </ul>
-
-        </div>
-
-
+<% info.orders.forEach(function(element){%>
+<p><%= element%></p>
+<%});%>
 <script
         src="https://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--<script>-->
 </body>
 </html>

@@ -35,10 +35,10 @@ var bbSchema=new mongoose.Schema({
     username:String,
     password:String,
     email:String,
-    confirmation:String,
-    orders:[bookSchema]
-});
 
+    confirmation:String,
+    orders:[String]
+});
 
 
 var newacc =mongoose.model("bbl",bbSchema);
@@ -70,9 +70,9 @@ app.get("/",function (req,res) {
 
 });
 
-app.post("/loginned/readymade",function(req,res){
-    res.status(200).send({success: 'OK'});
-    });
+// app.post("/loginned/readymade",function(req,res){
+//     res.status(200).send({success: 'OK'});
+//     });
 
 
 app.get("/create",function(req,res) {
@@ -100,7 +100,7 @@ app.post("/loginned",function (req,res) {
                    // alert("Invalid username or password");
                 }
                 else {
-                    res.render("loginned.ejs", {name: bb.name});
+                    res.render("loginned.ejs", {name: bb.name,username:bb.username});
                 }
     })
 });
@@ -135,51 +135,70 @@ app.get("/confirmation/username/:un",function(req,res){
 });
 
 
-app.get("/loginned/:type",function (req,res){
+app.get("/loginned/:un/myorders",function(req,res){
+    var un=(req.params.un);
+    //console.log(un);
+    newacc.findOne({username:un},function(err,bb){
+        res.render("myorders.ejs",{info:bb});
+        //console.log(bb.orders);
+    });
+});
+
+app.get("/loginned/:un/myaccount",function(req,res){
+    var un=(req.params.un);
+    //console.log(un);
+    newacc.findOne({username:un},function(err,bb){
+        res.render("myaccount.ejs",{info:bb});
+        //console.log(bb.orders);
+    });
+});
+
+app.get("/loginned/:un/:type",function (req,res){
 
     var type = (req.params.type);
-    var datas=[];
+    var un=(req.params.un);
+    //console.log(un);
 
     if(type==="bari") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb});
+            res.render("fashion.ejs",{datas: bb,type:type,un:un});
         });
         type = "2";
     }
     else if(type==="chooni") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:un});
         });
         type = "3";
     }
     else if(type==="readymade") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:un});
         });
         type = "1";
     }
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:un});
             //console.log(datas.price);
         });
         type = "4";
     }
     else if(type==="suits") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:un});
         });
         type = "6";
     }
     else if(type==="suitings") {
         bookings.find({category: type}, function (err, bb) {
-            res.render("fashion.ejs", {datas: bb,type:type});
+            res.render("fashion.ejs", {datas: bb,type:type,un:un});
         });
         type = "5";
     }
     else if(type==="gallery"){
             bookings.find({category:type},function(err,bb){
-                res.render("fashion.ejs",{datas: bb,type:type});
+                res.render("fashion.ejs",{datas: bb,type:type,un:un});
             });
     }});
 
@@ -235,26 +254,33 @@ app.get("/fashion/:type",function (req,res){
         }
 });
 
-app.post("/loginned/:un/book/:id",function(req,res){
+app.post("/loginned/:un/book/:id",function(req,res) {
     var id = req.params.id;
-    //console.log(id);
-    bookings.findOne({_id:id},function (err,bb){
-        var amount=(bb.amount)-1;
-        bookings.update({_id:id},{$set:{amount:amount}},function (err,updated) {
-            if(err)
+    var un = req.params.un;
+    //var orders = [];
+    //console.log(un);
+    bookings.findOne({_id: id}, function (err, book) {
+        var amount = (book.amount) - 1;
+        newacc.findOne({username: un}, function (err, bb) {
+            //bb.orders.push(book.name);
+            var name=book.name;
+            //console.log(name);
+             newacc.update({username: un}, {$push: {orders:name}}, function (err, updated) {
+                 if (err)
+                     console.log(err);
+
+             });
+        });
+        bookings.update({_id: id}, {$set: {amount: amount}}, function (err, updated) {
+            if (err)
                 console.log(err);
             else {
-                res.json({success : "Updated Successfully", status : 200});
-                //res.send("Booked");
-                //console.log(bb.amount);
+                res.json({success: "Updated Successfully", status: 200});
             }
         });
 
     });
-
- });
-
-
+});
 app.post("/register",function(req,res)
     {
         var details={
@@ -266,13 +292,9 @@ app.post("/register",function(req,res)
             // orders:["Sarees"]
 
         };
-
         newacc.findOne({username:details.username},function(err,bb){
-
             if(!bb){
-
                 newacc.findOne({email:details.email},function(err,bb){
-
                     if(!bb) {
 
 
@@ -310,7 +332,6 @@ app.post("/register",function(req,res)
 //
 //                         });
 
-
                         var request = sg.emptyRequest({
                             method: 'POST',
                             path: '/v3/mail/send',
@@ -338,42 +359,21 @@ app.post("/register",function(req,res)
                              'Proceed and shop at the Clothing Store..<br><br>'+
                              ' So what are you waiting for , <br>' +
 
-                                "<a href='https://shrouded-mountain-57581.herokuapp.com/confirmation/username/" + details.username + "' target='_blank'> 'Click on the link to activate your account'</a><br>"+
-                             //"<a href='http:///localhost:3000/confirmation/username'> CLICK</a>"+
+                                "<a href='https://bankebiharifashions.herokuapp.com/confirmation/username/" + details.username + "' target='_blank'> 'Click on the link to activate your account'</a><br>"+
+                             //"<a href='http:///localhost:3000/confirmation/username/" + > CLICK</a>"+
 
                              '<br><i>HAPPY SHOPPING<br> <br></i>'+
                             '<b>FOR FURTHER QUERIES:<br></b>'+'Contact:<br>Ayush Gupta(07705894165)'+// html body
                                         '</body></html>'
-
-
-
                                     }
                                     ]
                             }
-
-
-                            //});
                         });
 
-//With promise
-//                         sg.API(request)
-//                             .then(response => {
-//                             console.log(response.statusCode);
-//                         console.log(response.body);
-//                         console.log(response.headers);
-//                     })
-//                     .catch(error => {
-//                             //error is an instance of SendGridError
-//                             //The full response is attached to error.response
-//                             console.log(error.response.statusCode);
-//                     });
-
-//With callback
                         sg.API(request, function(error, response) {
                             if (error) {
                                 console.log('Error response received');
                             }
-
                             else {
                                 newacc.create(details);
                                 res.render("register.ejs", {name: details.name});
@@ -382,27 +382,16 @@ app.post("/register",function(req,res)
                             console.log(response.body);
                             console.log(response.headers);
                         });
-
-
                     }
                     else{
                         res.render("create.ejs",{b:"0"});
                     }
-
             })
             }
             else{
                 res.render("create.ejs",{b:"1"});
             }
-
         });
-
-        //  var name= req.body.name;
-        // var username= req.body.username;
-        // var password= req.body.password;
-        // var email= req.body.email;+
-        
-        /*res.redirect("/register");*/
 
     });
 
