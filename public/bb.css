@@ -15,6 +15,9 @@ html, body {
 
 }
 
+#db{
+    height:311px;
+}
 #footer{
     font-size: 38px;
     margin-left: -110px;

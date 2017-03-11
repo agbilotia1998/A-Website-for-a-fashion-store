@@ -115,7 +115,7 @@
 </h1>
 <br>
 
-    <form action="/register" method="POST" >
+    <form action="/register" method="POST" name="form1" >
 <input type="text" placeholder="First Name" class="form-control" id="ok" name="name"  required>
 <br>
 <input type="text" placeholder="Last Name" class="form-control" id="ok" required>
@@ -130,7 +130,7 @@
 <input type="email" placeholder="Email address" class="form-control" id="ok" name="email" required>
 <br>
 
-<input type="text" placeholder="Phone Number" class="form-control" id="ok"  required>
+<input type="text" placeholder="Phone Number" class="form-control" id="ok" maxLength="10" minlength="10" name="text1" required>
 <br>
 
 
@@ -235,7 +235,7 @@
 
 <br>
 <br>
-<button class="btn btn-success btn-lg" id="shift" type="submit"  >Create account</button>
+<button class="btn btn-success btn-lg" id="shift" type="submit" onclick="phonenumber(document.form1.text1)" >Create account</button>
 
     </in>
 </div>
@@ -263,7 +263,21 @@
     Username already exists
 </h2>
 <% } %>
-
+<script>
+    function phonenumber(inputtxt)
+    {
+        var phoneno = /^\d{10}$/;
+        if(inputtxt.value.match(phoneno))
+        {
+            return true;
+        }
+        else
+        {
+            alert("Not a valid Phone Number");
+            return false;
+        }
+    }
+</script>
 
 </body>
 </html>
