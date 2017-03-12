@@ -131,7 +131,7 @@ app.get("/confirmation/username/:un",function(req,res){
                 }
                 //Close connection
                            });
-            res.render("loginned.ejs", {name: bb.name});
+            res.render("loginned.ejs", {name: bb.name,username:bb.username});
         }
 
         else{
