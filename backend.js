@@ -488,7 +488,7 @@ app.get("/admin/:un/:add",function(req,res){
      var addTo=req.params.add;
      var un =req.params.un;
     // console.log(addTo);
-    if(un===process.env.adminusername) {
+    if(un===req.session.username) {
         res.render("addform.ejs", {addTo: addTo,un:un});
     }
 
