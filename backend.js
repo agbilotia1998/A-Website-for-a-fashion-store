@@ -517,6 +517,11 @@ app.post("/admin/:add",function(req,res){
     //res.render("addform.ejs");
 
 });
+
+app.get("/admin/logout",function(req,res){
+   req.session.username=false;
+    res.redirect("/admin");
+});
 //
 
 
