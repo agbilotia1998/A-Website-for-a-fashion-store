@@ -1,13 +1,11 @@
 
 
 #h2{
-    margin-top: 111px;
-    margin-left: -206px;
-    color: #761c19;
-    text-decoration: double;
-    text-decoration-style: double;
+    margin-left: -15%;
+    color: #761C19;
+    text-decoration: none double;
     font-size: 40px;
-    font-family: Calibri ;
+    font-family: Calibri;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -50,8 +48,8 @@ input
 
 
 form {
-    margin-left: 598px;
-    margin-top: 39px;
+    margin-left: 36%;
+    margin-top: 2%;
     font-size: 22px;
 
 }
@@ -68,15 +66,14 @@ body{
     margin-left: 60px;
 }
 #h1{
-    margin-left:556px;
-    color:black;
-    margin-top: 0px;
+    color: #000;
+    margin-top: 10%;
+    margin-left: 33%;
 }
 
 #nav{
     padding-top: 44px;
     /*background-color: #122b40;*/
-    margin-top: -11px;
     opacity: 0.9;
 }
 
@@ -84,9 +81,10 @@ body{
 #main{
     /*background-image:url{'t8.jpg'};*/
     background-image:url('t8.jpg');
-    background-size: 100%;
-    margin-top: -110px;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 1012px;
+    margin-top: -20px;
 }
 
 .fb-like{
