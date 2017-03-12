@@ -470,7 +470,7 @@ app.post("/admin",function (req,res) {
        if(adminpass==process.env.adminpassword)
        {
            req.session.username=adminname;
-           res.render("add.ejs",{un:adminname});
+           res.render("add.ejs");
        }
 
        else{
@@ -486,9 +486,10 @@ app.post("/admin",function (req,res) {
 
 app.get("/admin/:un/:add",function(req,res){
      var addTo=req.params.add;
+     var un =req.params.un;
     // console.log(addTo);
     if(un===process.env.adminusername) {
-        res.render("addform.ejs", {addTo: addTo});
+        res.render("addform.ejs", {addTo: addTo,un:un});
     }
 
     else{
