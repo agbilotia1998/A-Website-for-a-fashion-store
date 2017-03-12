@@ -152,7 +152,13 @@ app.get("/loginned/:un/myorders",function(req,res){
     var un=(req.params.un);
     //console.log(un);
     newacc.findOne({username:un},function(err,bb){
-        res.render("myorders.ejs",{info:bb});
+        if(req.session.username===un) {
+            res.render("myorders.ejs", {info: bb});
+        }
+
+        else{
+            res.redirect("/login");
+        }
         //console.log(bb.orders);
     });
 });
@@ -161,7 +167,11 @@ app.get("/loginned/:un/myaccount",function(req,res){
     var un=(req.params.un);
     //console.log(un);
     newacc.findOne({username:un},function(err,bb){
-        res.render("myaccount.ejs",{info:bb});
+        if(req.session.username===un) {
+            res.render("myaccount.ejs", {info: bb});
+        }
+
+        else res.redirect("/login");
         //console.log(bb.orders);
     });
 });
@@ -459,7 +469,8 @@ app.post("/admin",function (req,res) {
    {
        if(adminpass==process.env.adminpassword)
        {
-           res.render("add.ejs");
+           req.session.username=adminname;
+           res.render("add.ejs",{un:adminname});
        }
 
        else{
@@ -473,10 +484,16 @@ app.post("/admin",function (req,res) {
    }
 });
 
-app.get("/admin/:add",function(req,res){
+app.get("/admin/:un/:add",function(req,res){
      var addTo=req.params.add;
     // console.log(addTo);
-    res.render("addform.ejs",{addTo:addTo});
+    if(un===process.env.adminusername) {
+        res.render("addform.ejs", {addTo: addTo});
+    }
+
+    else{
+        res.redirect("/admin");
+    }
 
 });
 
