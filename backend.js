@@ -13,6 +13,7 @@ var express=require("express"),
     sg = require('sendgrid')(process.env.SENDGRID_API_KEY),
     passport=require("passport"),
     LocalStrategy=require("passport-local");
+    // ejsLint=require('./path/to/index.js');
    // User=require("./models/user");
 var x = process.env.x;
 mongoose.Promise = global.Promise;
@@ -69,6 +70,13 @@ app.get("/",function (req,res) {
 
 
 });
+
+function isLoggedIn(req,res,next) {
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("login");
+}
 
 // app.post("/loginned/readymade",function(req,res){
 //     res.status(200).send({success: 'OK'});
@@ -210,45 +218,45 @@ app.get("/fashion/:type",function (req,res){
 
     if(type==="bari") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb,type:type});
+            res.render("fashion.ejs",{datas:bb,type:type,un:false});
         });
         type = "2";
     }
     else if(type==="chooni") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:false});
         });
         type = "3";
     }
     else if(type==="readymade") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:false});
 
         });
         type = "1";
     }
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:false});
              //console.log(bb[0].id);
         });
         type = "4";
     }
     else if(type==="suits") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb,type:type});
+            res.render("fashion.ejs",{datas:bb,type:type,un:false});
         });
         type = "6";
     }
     else if(type==="suitings") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type});
+            res.render("fashion.ejs",{datas: bb,type:type,un:false});
         });
         type = "5";
     }
     else if(type==="gallery"){
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas:bb,type:type});
+            res.render("fashion.ejs",{datas:bb,type:type,un:false});
             //console.log(type);
     });
         }
@@ -454,6 +462,8 @@ app.post("/admin/:add",function(req,res){
 
 });
 //
+
+
 
 app.listen(process.env.PORT || 5000,function()
 {
