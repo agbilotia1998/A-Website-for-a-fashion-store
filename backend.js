@@ -470,7 +470,7 @@ app.post("/admin",function (req,res) {
        if(adminpass==process.env.adminpassword)
        {
            req.session.username=adminname;
-           res.render("add.ejs");
+           res.render("add.ejs",{un:adminname});
        }
 
        else{
