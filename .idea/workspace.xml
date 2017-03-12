@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6a8f4204-f95b-4638-81e1-7bce7bb5c017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo" afterPath="$PROJECT_DIR$/adminMongo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo/config/config.json" afterPath="$PROJECT_DIR$/adminMongo/config/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.js" afterPath="$PROJECT_DIR$/backend.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backend.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="backend.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="511">
+              <caret line="426" column="12" lean-forward="true" selection-start-line="426" selection-start-column="12" selection-end-line="426" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -87,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bbc.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bbc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/bbc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="1518">
+              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,7 +160,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/mail.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/public/bbc.css" />
         <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/views/gallery.ejs" />
         <option value="$PROJECT_DIR$/models/user.js" />
@@ -173,10 +174,11 @@
         <option value="$PROJECT_DIR$/public/bb.css" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/public/bbl.css" />
-        <option value="$PROJECT_DIR$/backend.js" />
         <option value="$PROJECT_DIR$/views/fashion.ejs" />
         <option value="$PROJECT_DIR$/views/website.ejs" />
         <option value="$PROJECT_DIR$/views/register.ejs" />
+        <option value="$PROJECT_DIR$/public/bbc.css" />
+        <option value="$PROJECT_DIR$/backend.js" />
       </list>
     </option>
   </component>
@@ -192,7 +194,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
-    <option name="y" value="49" />
+    <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
   </component>
@@ -561,12 +563,12 @@
       <workItem from="1489172680264" duration="281000" />
       <workItem from="1489214835645" duration="16988000" />
       <workItem from="1489243584618" duration="15721000" />
-      <workItem from="1489299360285" duration="16418000" />
+      <workItem from="1489299360285" duration="16785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="483790000" />
+    <option name="totallyTimeSpent" value="484157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,7 +580,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="49" width="1938" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15236051" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -876,14 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -921,8 +915,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/bbc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="1518">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="426" column="12" lean-forward="true" selection-start-line="426" selection-start-column="12" selection-end-line="426" selection-end-column="12" />
           <folding />
         </state>
       </provider>

@@ -417,9 +417,9 @@ app.get("/admin",function (req,res) {
 app.post("/admin",function (req,res) {
    var adminname=req.body.username;
    var adminpass=req.body.password;
-   if(adminname==="RADA")
+   if(adminname==process.env.adminusername)
    {
-       if(adminpass==="OK")
+       if(adminpass==process.env.adminpassword)
        {
            res.render("add.ejs");
        }
