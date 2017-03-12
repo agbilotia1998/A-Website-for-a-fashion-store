@@ -168,10 +168,10 @@ PRICE:<%= data.price %>
 //                //       //   'Accept':'application/vnd.github.v3+json'
 //            },
             success: function () {
-                $("#"+id).text("BOOKED");
+               <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
             },
             error: function (data) {
-                $(this).text("BOOKED");
+                $(this).text("BOOK NOW");
             }
         });
     });
