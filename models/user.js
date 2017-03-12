@@ -23,16 +23,19 @@ var passportLocalMongoose=require("passport-local-mongoose");
 //   role:            { type: String, default: 'client'}
 // });
 
-var UserSchema= new mongoose.Schema({
-  username:String,
-  password:String,
-    email:String
 
+var bbSchema=new mongoose.Schema({
+    name:String,
+    username:String,
+    password:String,
+    email:String,
+    confirmation:String,
+    orders:[String]
 });
 
-UserSchema.plugin(passportLocalMongoose());
+bbSchema.plugin(passportLocalMongoose());
 
-module.exports=mongoose.model("User",UserSchema);
+module.exports=mongoose.model("User",bbSchema );
 /**
  * Virtuals
  */

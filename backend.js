@@ -12,9 +12,11 @@ var express=require("express"),
     nodemailer = require('nodemailer'),
     sg = require('sendgrid')(process.env.SENDGRID_API_KEY),
     passport=require("passport"),
-    LocalStrategy=require("passport-local");
+    LocalStrategy=require("passport-local"),
+    passportLocalMongoose=require("passport-local-mongoose");
+    cookieParser=require("cookie-parser");
     // ejsLint=require('./path/to/index.js');
-   // User=require("./models/user");
+    // User=require("./models/user");
 var x = process.env.x;
 mongoose.Promise = global.Promise;
 
@@ -36,7 +38,6 @@ var bbSchema=new mongoose.Schema({
     username:String,
     password:String,
     email:String,
-
     confirmation:String,
     orders:[String]
 });
@@ -49,6 +50,7 @@ var bookings=mongoose.model("book",bookSchema);
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(require("express-session")({
     secret:"Fashion is Us",
     resave:false,
@@ -59,9 +61,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static(path.join(__dirname, 'public')));
- // passport.serializeUser(User.serialiseUser());
- // passport.deserializeUser(User.deserialiseUser());
- // passport.use(new LocalStrategy(User.authenticate()));
+// passport.use(new LocalStrategy(User.authenticate()));
+//  passport.serializeUser(User.serialiseUser());
+//  passport.deserializeUser(User.deserialiseUser());
+
 
 
 app.get("/",function (req,res) {
@@ -72,10 +75,11 @@ app.get("/",function (req,res) {
 });
 
 function isLoggedIn(req,res,next) {
+    console.log(req.isAuthenticated());
     if(req.isAuthenticated()){
         return next();
     }
-    res.redirect("login");
+    res.redirect("login.ejs");
 }
 
 // app.post("/loginned/readymade",function(req,res){
@@ -108,6 +112,7 @@ app.post("/loginned",function (req,res) {
                    // alert("Invalid username or password");
                 }
                 else {
+                    req.session.username=user;
                     res.render("loginned.ejs", {name: bb.name,username:bb.username});
                 }
     })
@@ -169,38 +174,70 @@ app.get("/loginned/:un/:type",function (req,res){
 
     if(type==="bari") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+            else{
+                res.redirect("/login");
+            }
         });
         type = "2";
     }
     else if(type==="chooni") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+            else{
+                res.redirect("/login");
+            }
         });
         type = "3";
     }
     else if(type==="readymade") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+            else{
+                res.redirect("/login");
+            }
         });
         type = "1";
     }
     else if(type==="sarees") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+
+            else{
+                res.redirect("/login");
+            }
+
             //console.log(datas.price);
         });
         type = "4";
     }
     else if(type==="suits") {
         bookings.find({category:type},function(err,bb){
-            res.render("fashion.ejs",{datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+            else{
+                res.redirect("/login");
+            }
         });
         type = "6";
     }
     else if(type==="suitings") {
         bookings.find({category: type}, function (err, bb) {
-            res.render("fashion.ejs", {datas: bb,type:type,un:un});
+            if(req.session.username===un) {
+                res.render("fashion.ejs", {datas: bb, type: type, un: un});
+            }
+            else{
+                res.redirect("/login");
+            }
         });
         type = "5";
     }
@@ -407,6 +444,7 @@ app.post("/register",function(req,res)
 //
 app.get("/logout",function (req,res) {
    req.logout();
+   req.session.username=false;
    res.redirect("/");
 });
 
