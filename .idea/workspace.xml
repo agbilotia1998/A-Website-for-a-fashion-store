@@ -49,8 +49,8 @@
       <file leaf-file-name="fashion.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+            <state relative-caret-position="303">
+              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -599,12 +599,12 @@
       <workItem from="1489332934616" duration="8293000" />
       <workItem from="1489344912873" duration="2680000" />
       <workItem from="1489348365413" duration="1191000" />
-      <workItem from="1489419530413" duration="3636000" />
+      <workItem from="1489419530413" duration="3716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501522000" />
+    <option name="totallyTimeSpent" value="501602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+        <state relative-caret-position="303">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding />
         </state>
       </provider>
