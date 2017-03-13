@@ -150,7 +150,9 @@ PRICE:<%= data.price %>
 <script>
     $("button").click(function (){
         var id=$(this).attr('id');
-      <%if(un){%>  var un="<%=un%>"; <%}%>
+      <%if(un){%>  var un="<%=un%>";
+        $("#"+id).text("BOOKED");
+        <%}%>
 
         $.ajax({
             type: 'POST',
