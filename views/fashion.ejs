@@ -124,7 +124,8 @@
     <% if(type!="gallery"){%>
 PRICE:<%= data.price %>
 <br>
-<button id="<%= data.id%>" class="btn btn-default btn-lg" <%if(!un){%>onclick="location.href ='/login'"<%}%> <%if(data.amount<=0){%> disabled <%}%> type="submit" name="<%=data.amount%>" ><%if(data.amount>0){%>BOOK NOW!<%}%>
+<button id="<%= data.id%>" class="btn btn-default btn-lg" <%if(!un){%>onclick="location.href ='/login'"<%}%> <%if(data.amount<=0){%> disabled <%}%> type="submit" name="<%=data.amount%>" >
+    <%if(data.amount>0){%>BOOK NOW!<%}%>
     <%if(data.amount<=0){%>NOT AVAILABLE<%}%>
 </button>
     <%}%>
@@ -164,11 +165,11 @@ PRICE:<%= data.price %>
 //
 //              //  'id':$(this).attr('id')
 //            //},
-//            headers:{
-//                'Access-Control-Allow-Origin':'*',
-//        'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
-//        'Access-Control-Allow-Headers': 'Authorization, Lan'
-//            },
+            headers:{
+                'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
+        'Access-Control-Allow-Headers': 'Authorization, Lan'
+            },
 
             success: function () {
                <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
