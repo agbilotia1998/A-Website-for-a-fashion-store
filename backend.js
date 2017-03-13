@@ -39,7 +39,8 @@ var bbSchema=new mongoose.Schema({
     password:String,
     email:String,
     confirmation:String,
-    orders:[String]
+    orders:[String],
+    total:0
 });
 
 
@@ -319,8 +320,9 @@ app.post("/loginned/:un/book/:id",function(req,res) {
         newacc.findOne({username: un}, function (err, bb) {
             //bb.orders.push(book.name);
             var name=book.name;
-            //console.log(name);
-             newacc.update({username: un}, {$push: {orders:name}}, function (err, updated) {
+            var total=(bb.total)+(book.price);
+            //console.log(bb.total);
+             newacc.update({username: un}, {$push: {orders:name},$set: {total: total}}, function (err, updated) {
                  if (err)
                      console.log(err);
 
