@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a8f4204-f95b-4638-81e1-7bce7bb5c017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo" afterPath="$PROJECT_DIR$/adminMongo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo/config/config.json" afterPath="$PROJECT_DIR$/adminMongo/config/config.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -598,12 +599,12 @@
       <workItem from="1489344912873" duration="2680000" />
       <workItem from="1489348365413" duration="1191000" />
       <workItem from="1489419530413" duration="3716000" />
-      <workItem from="1489423768511" duration="1055000" />
+      <workItem from="1489423768511" duration="1597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502657000" />
+    <option name="totallyTimeSpent" value="503199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
