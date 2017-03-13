@@ -156,8 +156,9 @@ PRICE:<%= data.price %>
             type: 'POST',
 
 
+
             dataType: 'json',
-            <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id, <%}}%>
+            <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id, <%}%>
 //            data: {
 //            "success": "Updated Successfully", "status": 200
 //
@@ -174,7 +175,8 @@ PRICE:<%= data.price %>
                 $(this).text("BOOK NOW");
             }
         });
-    });
+        });
+
 
 </script>
 
