@@ -152,7 +152,7 @@ PRICE:<%= data.price %>
     $("button").click(function (){
         var id=$(this).attr('id');
       <%if(un){%>  var un="<%=un%>";
-        $("#"+id).text("BOOKED");
+//        $("#"+id).text("BOOKED");
         <%}%>
 
         $.ajax({
