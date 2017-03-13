@@ -173,6 +173,8 @@ PRICE:<%= data.price %>
 
             success: function () {
                <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
+                <%if(un){%> alert("Order succesfully placed") <%}%>
+                <%if(un){%> $("#"+id).text("BOOK NOW"); <%}%>
             },
             error: function (data) {
                 $(this).text("BOOK NOW");

@@ -38,7 +38,9 @@ var bbSchema=new mongoose.Schema({
     username:String,
     password:String,
     email:String,
+    address:String,
     confirmation:String,
+    phone:Number,
     orders:[String],
     total:0
 });
@@ -348,6 +350,8 @@ app.post("/register",function(req,res)
             username: req.body.username,
             password: req.body.password,
             email: req.body.email,
+            phone:req.body.text1,
+            address:req.body.address,
             confirmation:"0"
             // orders:["Sarees"]
 
