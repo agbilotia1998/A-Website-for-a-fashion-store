@@ -164,9 +164,10 @@ PRICE:<%= data.price %>
 //
 //              //  'id':$(this).attr('id')
 //            //},
-//            //     // headers:{
-//                //       //   'Accept':'application/vnd.github.v3+json'
-//            },
+            headers:{
+                'Access-Control-Allow-Origin':'*'
+            },
+
             success: function () {
                <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
             },
