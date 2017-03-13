@@ -154,6 +154,7 @@ PRICE:<%= data.price %>
 
         $.ajax({
             type: 'POST',
+            crossDomain: true,
             dataType: 'json',
             <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id, <%}%>
 //            data: {
@@ -161,11 +162,11 @@ PRICE:<%= data.price %>
 //
 //              //  'id':$(this).attr('id')
 //            //},
-            headers:{
-                'Access-Control-Allow-Origin':'*',
-        'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
-        'Access-Control-Allow-Headers': 'Authorization, Lan'
-            },
+//            headers:{
+//                'Access-Control-Allow-Origin':'*',
+//        'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
+//        'Access-Control-Allow-Headers': 'Authorization, Lan'
+//            },
 
             success: function () {
                <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
