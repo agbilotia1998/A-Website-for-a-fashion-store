@@ -352,7 +352,8 @@ app.post("/register",function(req,res)
             email: req.body.email,
             phone:req.body.text1,
             address:req.body.address,
-            confirmation:"0"
+            confirmation:"0",
+            total:0
             // orders:["Sarees"]
 
         };
