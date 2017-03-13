@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo" afterPath="$PROJECT_DIR$/adminMongo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo/config/config.json" afterPath="$PROJECT_DIR$/adminMongo/config/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/fashion.ejs" afterPath="$PROJECT_DIR$/views/fashion.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +49,8 @@
       <file leaf-file-name="fashion.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -598,12 +599,12 @@
       <workItem from="1489332934616" duration="8293000" />
       <workItem from="1489344912873" duration="2680000" />
       <workItem from="1489348365413" duration="1191000" />
-      <workItem from="1489419530413" duration="3405000" />
+      <workItem from="1489419530413" duration="3636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501291000" />
+    <option name="totallyTimeSpent" value="501522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
           <folding />
         </state>
       </provider>
