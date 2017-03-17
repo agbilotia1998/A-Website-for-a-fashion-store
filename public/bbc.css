@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #body{
     background-size: cover;
     margin-left: 125px;
