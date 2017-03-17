@@ -86,8 +86,8 @@ html, body {
 
 #news{
 
-    margin-left: 1118px;
-    margin-top: -1040px;
+    float:right;
+    margin-top: -80%;
 
 
 }
