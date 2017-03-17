@@ -421,7 +421,7 @@ app.post("/register",function(req,res)
                                     {
                                         type: 'text/html',
                                         value: '<html><body>' +
-                                            "<img src='https://drive.google.com/open?id=0B2dKDCLMTJ2WcmlQUGVDck90Q3M'><br><br>"+
+                                            "<img src='https://lh6.googleusercontent.com/LXMplZcTq0_9YEuEcgE0J1mvRpj7Vb4Z_66YcsqjJvxAKkzQHxtZf8LQBdxJA2Cflynu0IZycw7it34=w1920-h943'><br><br>"+
                                         '<b> Thanks for registering At Banke Bihari Fashions.... <br><br></b>' +
                              'Proceed and shop at the Clothing Store..<br><br>'+
                              ' So what are you waiting for , <br>' +
