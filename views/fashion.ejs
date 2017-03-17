@@ -129,6 +129,10 @@ PRICE:<%= data.price %>
     <%if(data.amount<=0){%>NOT AVAILABLE<%}%>
 </button>
     <%}%>
+    <br>
+    <br>
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" id="<%= data.id%>quantity" placeholder="0" min="1">
 </div>
 </div>
 </div>
@@ -151,6 +155,8 @@ PRICE:<%= data.price %>
 <script>
     $("button").click(function (){
         var id=$(this).attr('id');
+        var quant=document.getElementById(id+'quantity').value;
+        var d = new Date();
       <%if(un){%>  var un="<%=un%>";
 //        $("#"+id).text("BOOKED");
         <%}%>
@@ -159,7 +165,7 @@ PRICE:<%= data.price %>
             type: 'POST',
             crossDomain: true,
             dataType: 'json',
-            <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id, <%}%>
+            <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id+'/'+quant+'/'+d.toString(), <%}%>
 //            data: {
 //            "success": "Updated Successfully", "status": 200
 //

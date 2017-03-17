@@ -315,9 +315,11 @@ app.get("/fashion/:type",function (req,res){
         }
 });
 
-app.post("/loginned/:un/book/:id",function(req,res) {
+app.post("/loginned/:un/book/:id/:quantity/:time",function(req,res) {
     var id = req.params.id;
     var un = req.params.un;
+    var quantity=req.params.quantity;
+    var ordertime=req.params.time;
     //var orders = [];
     //console.log(un);
     bookings.findOne({_id: id}, function (err, book) {
@@ -325,9 +327,9 @@ app.post("/loginned/:un/book/:id",function(req,res) {
         newacc.findOne({username: un}, function (err, bb) {
             //bb.orders.push(book.name);
             var name=book.name;
-            var total=(bb.total)+(book.price);
+            var total=(bb.total)+(quantity*(book.price));
             //console.log(bb.total);
-             newacc.update({username: un}, {$push: {orders:name},$set: {total: total}}, function (err, updated) {
+             newacc.update({username: un}, {$push: {orders:name+'  -  '+quantity+'(quantity)'+'--Time of order:'+ordertime},$set: {total: total}}, function (err, updated) {
                  if (err)
                      console.log(err);
 

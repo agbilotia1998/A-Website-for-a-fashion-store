@@ -85,10 +85,16 @@
 
 <% info.orders.forEach(function(element){%>
 <p><%= element%></p>
+
 <%});%>
 <br>
 <br>
 Your Total:Rs.<%= info.total%>
+
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toUTCString();
+</script>
 <script
         src="https://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
