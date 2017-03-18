@@ -323,7 +323,7 @@ app.post("/loginned/:un/book/:id/:quantity/:time",function(req,res) {
     //var orders = [];
     //console.log(un);
     bookings.findOne({_id: id}, function (err, book) {
-        var amount = (book.amount) - 1;
+        var amount = (book.amount) - (quantity);
         newacc.findOne({username: un}, function (err, bb) {
             //bb.orders.push(book.name);
             var name=book.name;
