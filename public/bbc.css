@@ -4,8 +4,8 @@ html, body {
 }
 #body{
     background-size: cover;
-    margin-left: 125px;
-    margin-top: 100px;
+    /*margin-left: 125px;*/
+    /*margin-top: 100px;*/
 }
 
 button{
@@ -74,8 +74,8 @@ form{
 
 #nav{
     padding-top: 44px;
-    margin-top: -115px;
-    margin-left: -126px;
+    /*margin-top: -115px;*/
+    /*margin-left: -126px;*/
     padding-bottom: -6px;
 }
 .fb-like{
