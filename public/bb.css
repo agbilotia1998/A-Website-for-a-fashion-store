@@ -87,9 +87,11 @@ html, body {
 #news{
 
     float:right;
-    margin-top: -80%;
+    margin-top: -58%;
+}
 
-
+#owner{
+    width:100%;
 }
 
 #column{
