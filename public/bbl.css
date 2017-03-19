@@ -4,7 +4,6 @@ html, body {
 }
 
 #h2{
-    margin-left: -15%;
     color: #761C19;
     text-decoration: none double;
     font-size: 40px;
@@ -12,47 +11,50 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 14%;
+
 }
 
-center{
-    margin-top: 2%;
-    color: red;
-}
+/*center{*/
+    /*margin-top: 2%;*/
+    /*color: red;*/
+/*}*/
 
 input
 {
-    margin-left: 540px;
+    /*margin-left: 540px;*/
     padding-top: 2px;
-    padding-left: 99px;
+    /*padding-left: 99px;*/
     border-radius: 6px;
     font-size: 19px;
     font-style: oblique;
     border-top: bisque;
     height: 40px;
-    width: 300px;
+    /*width: 300px;*/
 }
 
 #btn{
-    margin-left: 5px;
-    background-color: #E4B9B9;
-    border-color: #000;
+    /*margin-left: 5px;*/
+    /*background-color: beige ;*/
+    /*border-color: #000;*/
     border-radius: 5px;
-    height: 39px;
-    width: 294px;
-    margin-top: -40px;
+    /*height: 39px;*/
+    width: 14%;
+    /*margin-top: -40px;*/
 
 }
 
 #pass{
     margin-top: 9px;
+    background: transparent;
 }
 
 
 form {
-    margin-left: 39%;
+    /*margin-left: 39%;*/
     margin-top: 2%;
     font-size: 22px;
+
 
 }
 
@@ -62,15 +64,14 @@ a{
 }
 body{
     color: #FFF;
-    margin-top: 292px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 60px;
 }
 #h1{
-    color: #000;
-    margin-top: 10%;
-    margin-left: 36%;
+    color: #761C19;
+    margin-top: 17%;
+    /*margin-left: 36%;*/
+
 }
 
 #nav{
@@ -82,13 +83,17 @@ body{
 
 #main{
     /*background-image:url{'t8.jpg'};*/
-    background-image:url('t8.jpg');
+    background-image:url('brooke-cagle-39572.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1012px;
+    height: 2000px;
     margin-top: -20px;
 }
 
 .fb-like{
     margin-top: 15px;
+}
+
+#user{
+background: transparent;
 }
