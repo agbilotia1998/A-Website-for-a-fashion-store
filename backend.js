@@ -13,7 +13,7 @@ var express=require("express"),
     sg = require('sendgrid')(process.env.SENDGRID_API_KEY),
     passport=require("passport"),
     LocalStrategy=require("passport-local"),
-    passportLocalMongoose=require("passport-local-mongoose");
+    passportLocalMongoose=require("passport-local-mongoose"),
     cookieParser=require("cookie-parser");
     // ejsLint=require('./path/to/index.js');
     // User=require("./models/user");
@@ -101,7 +101,20 @@ app.get("/create",function(req,res) {
     });
 
 app.get("/login",function(req,res){
-                res.render("login.ejs", {a: "0"});
+
+    if(req.session.username){
+        var username=req.session.username;
+        newacc.findOne({username:username},function(err,data){
+           var name=data.name;
+            res.render("loginned.ejs",{username:username,name:name});
+        });
+    }
+
+
+    else{
+
+        res.render("login.ejs", {a: "0"});
+    }
 });
 
 
@@ -127,7 +140,6 @@ app.post("/loginned",function (req,res) {
 
 
 app.get("/confirmation/username/:un",function(req,res){
-
     var verify=(req.params.un);
     newacc.findOne({username:(req.params.un)},function(err,bb){
         if(bb) {
@@ -144,13 +156,11 @@ app.get("/confirmation/username/:un",function(req,res){
                            });
             res.redirect("/login");
         }
-
         else{
             res.send("USER NOT REGISTERED");
         }
         //console.log(newacc.confirmation);
     })
-
 });
 
 

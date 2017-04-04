@@ -131,8 +131,11 @@ PRICE:<%= data.price %>
     <%}%>
     <br>
     <br>
+
+    <% if(type!="gallery"){%>
     <label for="quantity">Quantity</label>
     <input type="number" name="quantity" id="<%= data.id%>quantity" placeholder="0" min="1">
+    <%}%>
 </div>
 </div>
 </div>
@@ -173,8 +176,8 @@ PRICE:<%= data.price %>
 //            //},
             headers:{
                 'Access-Control-Allow-Origin':'*',
-        'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
-        'Access-Control-Allow-Headers': 'Authorization, Lan'
+                'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
+                'Access-Control-Allow-Headers': 'Authorization, Lan'
             },
 
             success: function () {
