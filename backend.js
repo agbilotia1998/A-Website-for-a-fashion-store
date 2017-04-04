@@ -109,10 +109,7 @@ app.get("/login",function(req,res){
             res.render("loginned.ejs",{username:username,name:name});
         });
     }
-
-
     else{
-
         res.render("login.ejs", {a: "0"});
     }
 });

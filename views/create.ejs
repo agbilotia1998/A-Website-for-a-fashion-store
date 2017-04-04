@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
-    <title>create</title>
+    <title>Create</title>
     <link rel="stylesheet" type="text/css" href="bbc.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="final.jpg" rel="shortcut icon" type="image/png">
 </head>
+
 <body background="t7.jpg" id="body">
-
-
 <div id="fb-root">  </div>
 <script>
     window.fbAsyncInit = function() {
@@ -31,11 +30,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-
-
-
-
-
 
 
 <nav class="navbar navbar-default" id="nav">
@@ -72,30 +66,13 @@
                         <li><a href="/fashion/suits">Suits</a> </li>
                     </ul>
                 </li>
-
                 <li><a href="/#about">About Us</a></li>
                 <li><a href="/#contact">Contact Us</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li>
-
                     <div class="fb-like" data-href="https://www.facebook.com/bankebiharichirawa/" data-width="15px" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-
                 </li>
             </ul>
-
-            <!--<ul class="nav navbar-nav navbar-right">-->
-            <!--<li><a href="#">Link</a></li>-->
-            <!--<li class="dropdown">-->
-            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-            <!--<ul class="dropdown-menu">-->
-            <!--<li><a href="#">Action</a></li>-->
-            <!--<li><a href="#">Another action</a></li>-->
-            <!--<li><a href="#">Something else here</a></li>-->
-            <!--<li role="separator" class="divider"></li>-->
-            <!--<li><a href="#">Separated link</a></li>-->
-            <!--</ul>-->
-            <!--</li>-->
-            <!--</ul>-->
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
@@ -118,6 +95,7 @@
     <form action="/register" method="POST" name="form1" >
 <input type="text" placeholder="First Name" class="form-control" id="ok" name="name"  required>
 <br>
+
 <input type="text" placeholder="Last Name" class="form-control" id="ok" required>
 <br>
 
@@ -132,10 +110,11 @@
 
 <input type="text" placeholder="Phone Number" class="form-control" id="ok" maxLength="10" minlength="10" name="text1" required>
         <br>
+
         <input type="text" placeholder="Address" class="form-control" id="ok" name="address" required>
 
-    <br>
-    <br>
+        <br>
+        <br>
 <div class="container">
     <in class="form-group">
         <label> Birthday</label>
@@ -217,39 +196,25 @@
             <option>2001</option>
             <option>2002</option>
             <option>2003</option>
-
-
-
         </select>
+        <br>
+        <br>
 
-
-
-    <br>
-    <br>
-
-<label>Male</label>
+        <label>Male</label>
         <input type="radio" name="gender" value="MALE" required>
-<label>Female</label>
-<input type="radio" name="gender" value="FEMALE" required>
-
-
-<br>
-<br>
-<button class="btn btn-success btn-lg" id="shift" type="submit" onclick="phonenumber(document.form1.text1)" >Create account</button>
+        <label>Female</label>
+        <input type="radio" name="gender" value="FEMALE" required>
+        <br>
+        <br>
+        <button class="btn btn-success btn-lg" id="shift" type="submit" onclick="phonenumber(document.form1.text1)" >Create account</button>
 
     </in>
-</div>
-
-    <!--</form>-->
-<!--<form action="/register" method="post">-->
-
-</form>
+    </div>
+    </form>
 
 
 
 <% if (b==="0"){ %>
-
-
     <h2 id="ejs">
     Email already exists
     </h2>
@@ -257,12 +222,13 @@
 
 
 <% if (b==="1"){ %>
-
 <h2 id="ejs">
 
     Username already exists
 </h2>
 <% } %>
+
+
 <script>
     function phonenumber(inputtxt)
     {
