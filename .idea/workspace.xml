@@ -5,6 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo" afterPath="$PROJECT_DIR$/adminMongo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminMongo/config/config.json" afterPath="$PROJECT_DIR$/adminMongo/config/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bb.css" afterPath="$PROJECT_DIR$/public/bb.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/website.ejs" afterPath="$PROJECT_DIR$/views/website.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +30,8 @@
       <file leaf-file-name="backend.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="22">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -45,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="website.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="website.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/website.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+            <state relative-caret-position="352">
+              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bb.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bb.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/bb.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="290" column="21" lean-forward="true" selection-start-line="290" selection-start-column="21" selection-end-line="290" selection-end-column="92" />
+            <state relative-caret-position="22">
+              <caret line="290" column="60" lean-forward="false" selection-start-line="290" selection-start-column="60" selection-end-line="290" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -68,7 +70,7 @@
       <file leaf-file-name="fashion.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="792">
               <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
@@ -78,7 +80,7 @@
       <file leaf-file-name="login.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/login.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="330">
               <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
@@ -98,7 +100,7 @@
       <file leaf-file-name="register.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/register.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="2090">
               <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
               <folding />
             </state>
@@ -127,6 +129,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;!DOCTYPE html&gt; &lt;div lang=&quot;en&quot; xmlns:fb=&quot; http://www.facebook.com/2008/xfbml &quot;&gt;     &lt;head prefix=&quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#&quot;&gt;         &lt;meta charset=&quot;UTF-8&quot;&gt;         &lt;title&gt;A Clothing Store&lt;/title&gt;         &lt;meta name=&quot;viewport&quot; content=&quot;width=1024, initial-scale=1.0&quot;&gt;         &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bb.css&quot;&gt;         &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap.min.css&quot;&gt;         &lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat|Raleway&quot; rel=&quot;stylesheet&quot;&gt;         &lt;link href=&quot;https://fonts.googleapis.com/css?family=Sansita&quot; rel=&quot;stylesheet&quot;&gt;         &lt;meta property=&quot;fb:app_id&quot; content=&quot;208143129655109&quot; /&gt;         &lt;meta property=&quot;og:url&quot;   content=&quot;https://www.facebook.com/search/top/?q=banke%20bihari%20fashion&quot; /&gt;         &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;         &lt;meta property=&quot;og:title&quot; content=&quot;A fashion store&quot; /&gt;         &lt;link href=&quot;jquery.announcement.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;         &lt;link href=&quot;final.jpg&quot; rel=&quot;shortcut icon&quot; type=&quot;image/png&quot;&gt;         &lt;script src=&quot;jquery.announcement.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;     &lt;/head&gt;       &lt;div id=&quot;fb-root&quot;&gt;  &lt;/div&gt;     &lt;script&gt;         window.fbAsyncInit = function() {             FB.init({                 appId      : '208143129655109',                 xfbml      : 'true',                 version    : 'v2.8',                 cookie     : 'true'             });             FB.AppEvents.logPageView();         };         (function(d, s, id) {             var js, fjs = d.getElementsByTagName(s)[0];             if (d.getElementById(id)) return;             js = d.createElement(s); js.id = id;             js.src = &quot;https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=208143129655109&quot;;             fjs.parentNode.insertBefore(js, fjs);         }(document, 'script', 'facebook-jssdk'));     &lt;/script&gt;       &lt;nav class=&quot;navbar navbar-default&quot; id=&quot;nav&quot;&gt;         &lt;div class=&quot;container-fluid&quot;&gt;             &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;                 &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;                 &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                 &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                 &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;             &lt;/button&gt;             &lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Banke Bihari Fashions&lt;/a&gt;--&gt;             &lt;a href=&quot;/&quot; class=&quot;navbar-brand&quot;&gt;&lt;/a&gt;             &lt;img src=&quot;final (1).jpg&quot;  style=&quot;margin-left: 44%; margin-top: 1%;height:150px; width:150px&quot;&lt;/img&gt;                &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;             &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot; style=&quot;margin-top: -2%; margin-left: 26%;&quot;&gt;                 &lt;ul class=&quot;nav navbar-nav&quot;&gt;                      &lt;li &gt;&lt;a href=&quot;/&quot;&gt;Home &lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;&lt;a href=&quot;/fashion/gallery&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;                     &lt;li class=&quot;dropdown&quot;&gt;                         &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-animations=&quot;fadeInDown fadeInRight fadeInUp fadeInLeft&quot;  data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; data-hover=&quot;dropdown&quot;&gt;Clothings &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;                         &lt;ul class=&quot;dropdown-menu&quot;&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/readymade&quot;&gt;Readymade&lt;/a&gt;&lt;/li&gt;                             &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/suitings&quot;&gt;Suitings and shirtings&lt;/a&gt;&lt;/li&gt;                             &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/sarees&quot;&gt;Sarees&lt;/a&gt;&lt;/li&gt;                             &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/chooni&quot;&gt; Choonri&lt;/a&gt;&lt;/li&gt;                             &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/bari&quot;&gt;Bari&lt;/a&gt; &lt;/li&gt;                             &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;                             &lt;li&gt;&lt;a href=&quot;/fashion/suits&quot;&gt;Suits&lt;/a&gt; &lt;/li&gt;                         &lt;/ul&gt;                     &lt;/li&gt;                      &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;                         &lt;div class=&quot;fb-like&quot; data-href=&quot;https://www.facebook.com/bankebiharichirawa/&quot; data-width=&quot;15px&quot; data-layout=&quot;button_count&quot; data-action=&quot;like&quot; data-size=&quot;large&quot; data-show-faces=&quot;false&quot; data-share=&quot;true&quot;&gt;&lt;/div&gt;                     &lt;/li&gt;                 &lt;/ul&gt;             &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;         &lt;/div&gt;&lt;!-- /.container-fluid --&gt;     &lt;/nav&gt;          &lt;div id=&quot;header&quot;&gt;          &lt;h1 id=&quot;h1&quot;  &gt;BANKE BIHARI FASHIONS&lt;/h1&gt;         &lt;h4 align=&quot;center&quot; id=&quot;pad&quot;&gt;(The Name You Can Trust)&lt;/h4&gt;         &lt;br&gt;         &lt;!--&lt;marquee&gt;RAYMONDS.........................JOCKEY..........................AMUL......................SPARKY JEANS.......................LEVIS.......................PEPE JEANS........................PUMA...................DENIM JEANS..................ARROW SHIRTS&lt;/marquee&gt;--&gt;     &lt;/div&gt;        &lt;div id=&quot;clicks&quot;&gt;         &lt;center&gt;             &lt;br&gt;              For Purchasing Goods Create Account !!!!   And   Login !!!!!    ............         &lt;/center&gt;         &lt;br&gt;         &lt;br&gt;         &lt;br&gt;           &lt;ul&gt;             &lt;li&gt;                 &lt;b&gt; DONOT SHARE YOUR LOGIN CREDENTIALS WITH ANYONE&lt;/b&gt;              &lt;/li&gt;         &lt;/ul&gt;         &lt;div class=&quot;butt&quot;&gt;             &lt;a href=&quot;login&quot; class=&quot;btn btn-default&quot; id=&quot;login&quot; &gt;LOGIN&lt;/a&gt;             &lt;a href=&quot;create&quot; class=&quot;btn btn-default&quot; id=&quot;create&quot; &gt;CREATE ACCOUNT &lt;/a&gt;         &lt;/div&gt;      &lt;/div&gt;      &lt;div class =&quot;cb&quot;&gt;         &lt;div class=&quot;slider&quot;&gt;             &lt;center&gt;                 THIS IS WHAT WE DEAL WITH!             &lt;/center&gt;             &lt;img class=&quot;mySlides&quot; src=&quot;slider1.jpg&quot; &gt;             &lt;img class=&quot;mySlides&quot; src=&quot;slider2.jpg&quot; &gt;             &lt;img class=&quot;mySlides&quot; src=&quot;slider3.jpg&quot; &gt;             &lt;img class=&quot;mySlides&quot; src=&quot;slider4.jpg&quot; &gt;             &lt;img class=&quot;mySlides&quot; src=&quot;slider5.jpg&quot; &gt;             &lt;div class=&quot;w3-center w3-section w3-large w3-text-white w3-display-bottommiddle&quot; style=&quot;width:50%&quot;&gt;                 &lt;div class=&quot;w3-left w3-padding-left w3-hover-text-khaki&quot; onclick=&quot;plusDivs(-1)&quot;&gt;&amp;#10094;&lt;/div&gt;                 &lt;div class=&quot;w3-right w3-padding-right w3-hover-text-khaki&quot; onclick=&quot;plusDivs(1)&quot;&gt;&amp;#10095;&lt;/div&gt;                 &lt;span class=&quot;w3-badge demo w3-border w3-transparent w3-hover-white&quot; onclick=&quot;currentDiv(1)&quot;&gt;&lt;/span&gt;                 &lt;span class=&quot;w3-badge demo w3-border w3-transparent w3-hover-white&quot; onclick=&quot;currentDiv(2)&quot;&gt;&lt;/span&gt;                 &lt;span class=&quot;w3-badge demo w3-border w3-transparent w3-hover-white&quot; onclick=&quot;currentDiv(3)&quot;&gt;&lt;/span&gt;             &lt;/div&gt;             &lt;center&gt;                 GO AHEAD AND SHOP!!             &lt;/center&gt;         &lt;/div&gt;          &lt;br&gt;         &lt;hr&gt;         &lt;br&gt;         &lt;br&gt;         &lt;br&gt;           &lt;div id=&quot;contents&quot;&gt;             &lt;p id=&quot;range&quot;&gt;RANGE OF CLOTHINGS&lt;/p&gt;i             &lt;br&gt;             &lt;br&gt;             &lt;br&gt;             &lt;br&gt;             &lt;div class=&quot;container&quot;  id=&quot;container&quot;&gt;                 &lt;div class=&quot;row&quot; id=&quot;div&quot;&gt;                     &lt;div class=&quot;col-lg-3&quot;&gt;                         &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;/Ready made/rm3.jpeg&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                 &lt;a href=&quot;/fashion/readymade&quot; &gt; EXPLORE FOR READY MADE CLOTHINGS&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                       &lt;div class=&quot;col-lg-3&quot;&gt;                         &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;/Sarees/s11.jpeg&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                  &lt;a href=&quot;/fashion/sarees&quot; id=&quot;saree&quot;&gt; EXPLORE FOR SAREES&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                       &lt;div class=&quot;col-lg-3&quot;&gt;                          &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;/Shirtings/ss10.jpeg&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                 &lt;a href=&quot;/fashion/suitings&quot; &gt; EXPLORE FOR SUITINGS AND SHIRTINGS&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                 &lt;/div&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                  &lt;div class=&quot;row&quot;  id=&quot;row2&quot; &gt;                     &lt;div class=&quot;col-lg-3&quot;&gt;                         &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;/Choonri/c6.jpeg&quot; class=&quot;bi&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                 &lt;a href=&quot;/fashion/chooni&quot; class=&quot;bi&quot; &gt; EXPLORE FOR CHOONRI&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                      &lt;div class=&quot;col-lg-3&quot;&gt;                         &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;bari-bas.jpg&quot; class=&quot;bi&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                 &lt;a href=&quot;/fashion/bari&quot; class=&quot;bi&quot; &gt; EXPLORE FOR BARI&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                       &lt;div class=&quot;col-lg-3&quot;&gt;                         &lt;div class=&quot;thumbnail&quot;&gt;                             &lt;img src=&quot;suits.jpg&quot; class=&quot;bi&quot; id=&quot;suits&quot;&gt;                             &lt;div class=&quot;caption&quot;&gt;                                 &lt;a href=&quot;/fashion/suits&quot; class=&quot;bi&quot; &gt; EXPLORE FOR SUITS&lt;/a&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                  &lt;/div&gt;                  &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                     &lt;div class=&quot;col-lg-3 col-sm-12&quot; id=&quot;news&quot;&gt;                     &lt;div class=&quot;thumbnail&quot;&gt;                         &lt;div class=&quot;caption&quot; id=&quot;column&quot; &gt;                             &lt;center&gt;New Collection&lt;/center&gt;                             &lt;table border=&quot;2px&quot;&gt;                                 &lt;div class=&quot;smartmarquee example&quot;&gt;                                     &lt;ul class=&quot;container&quot;&gt;                                         &lt;li class=&quot;elements&quot;&gt; Embroidery sarees from Laxmi collections &lt;/li&gt;                                         &lt;li class=&quot;elements&quot;&gt; Embroidery sarees from Radhika collections &lt;/li&gt;                                         &lt;li class=&quot;elements&quot;&gt; Designer sarees from NRC collections &lt;/li&gt;                                         &lt;li class=&quot;elements&quot;&gt; New range of Raymond shirtings &lt;/li&gt;                                         &lt;li class=&quot;elements&quot;&gt; New Suits collection from SS cottons. &lt;/li&gt;                                         &lt;li class=&quot;elements&quot;&gt; Wide range of Bombay Dyeing Bedsheets&lt;/li&gt;                                     &lt;/ul&gt;                                 &lt;/div&gt;                                 &lt;br&gt;                                 &lt;br&gt;                                 &lt;br&gt;                                 &lt;br&gt;                                 &lt;br&gt;                             &lt;/table&gt;                         &lt;/div&gt;                     &lt;/div&gt;                 &lt;/div&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;hr&gt;                  &lt;div class=&quot;info&quot; id=&quot;about&quot;&gt;                     &lt;h1 &gt;&lt;center id=&quot;head1&quot;&gt;About us&lt;/center&gt;&lt;/h1&gt;                     &lt;h2 id=&quot;h2&quot;&gt;                         Banke Bihari Fashions                     &lt;/h2&gt;                      &lt;p id=&quot;h2&quot;&gt;                         Banke Bihari Fashions is a fashionable clothing store which aims to excel in its clothing quality with the moto                         of serving its customers nicely.                         &lt;br&gt;                         It was established in 2015 by &lt;b&gt;Mr.Ramavtar Bilotia&lt;/b&gt; .                         &lt;br&gt;                          With only two years of its start ,it has become a name of quality garments among its customers .                         &lt;br&gt;                         The store is known for its multivariety clothings for every class.                      &lt;/p&gt;                     &lt;ul&gt;                         &lt;b&gt;                             &lt;li&gt;  A RENOWNED NAME FOR FASHIONABLE CLOTHING&lt;/li&gt;                             &lt;br&gt;                              &lt;li&gt; FIXED PRICE SHOWROOM   &lt;/li&gt;                             &lt;br&gt;                             &lt;li&gt; EXCELLENT QUALITY GUARANTEED&lt;/li&gt;                             &lt;br&gt;                             &lt;li&gt; READ ALL  &lt;a href=&quot;terms.html&quot;&gt;TERMS AND CONDITIONS&lt;/a&gt; &lt;/li&gt;                             &lt;br&gt;                             &lt;li&gt;COLLECT YOUR BILL AFTER EVERY PURCHASE&lt;/li&gt;                         &lt;/b&gt;                     &lt;/ul&gt;                     &lt;br&gt;                     &lt;br&gt;                     &lt;br&gt;                     &lt;br&gt;                     &lt;br&gt;                     &lt;br&gt;                 &lt;/div&gt;                &lt;/div&gt;             &lt;footer id=&quot;contact&quot;&gt;                 &lt;p id=&quot;names&quot; &gt;                 &lt;hr&gt;                 &lt;center id=&quot;footer&quot;&gt;                     Contact us :                 &lt;/center&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;div class=&quot;container&quot; id=&quot;owner&quot;&gt;                     &lt;div class=&quot;row&quot;&gt;                         &lt;div class=&quot;col-lg-12 col-sm-12&quot; &gt;                             &lt;div class=&quot;thumbnail&quot;&gt;                                 &lt;img src=&quot;owner modified.jpg&quot;&gt;                                 &lt;div class=&quot;caption&quot;&gt;                                     &lt;center&gt;                                         RAMAVTAR BILOTIA (PROPRIETOR) - 09460734200                                     &lt;/center&gt;                                 &lt;/div&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                      &lt;div class=&quot;row&quot;&gt;                         &lt;div class=&quot;col-lg-4&quot;&gt;                             &lt;div class=&quot;thumbnail&quot;&gt;                                 &lt;img src=&quot;https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/1688307_1563796467177040_8746161368536746349_n.jpg?oh=6283d43ffc759537598e161ae7db3a45&amp;oe=59330F57&quot; id=&quot;db&quot;&gt;                                 &lt;div class=&quot;caption&quot;&gt;                                     DINESH KUMAR BILOTIA - 09414540219                                 &lt;/div&gt;                             &lt;/div&gt;                         &lt;/div&gt;                          &lt;div class=&quot;col-lg-4&quot;&gt;                             &lt;div class=&quot;thumbnail&quot;&gt;                                 &lt;img src=&quot;https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/11053100_136983679966420_106475436686787000_n.jpg?oh=d457e04c7b4fd17d7ce4daf829695af2&amp;oe=5925D9C5&quot;&gt;                                 &lt;div class=&quot;caption&quot;&gt;                                     MUKESH KUMAR BILOTIA -                                 &lt;/div&gt;                             &lt;/div&gt;                         &lt;/div&gt;                           &lt;div class=&quot;col-lg-4&quot;&gt;                             &lt;div class=&quot;thumbnail&quot;&gt;                                 &lt;img src=&quot;https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/p843x403/15621973_1281164698617843_6997396390101088330_n.jpg?oh=6b9d9141920ba046627ee754453206f3&amp;oe=596EA27F&quot;&gt;                                 &lt;div class=&quot;caption&quot;&gt;                                     SOURABH BILOTIA -                                 &lt;/div&gt;                             &lt;/div&gt;                         &lt;/div&gt;                     &lt;/div&gt;                 &lt;/div&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 ADDRESS:                  BANKE BIHARI FASHIONS ,NEAR KABUTAR KHANA,&lt;BR&gt;                 CHIRAWA,(DIST.)JHUNJHUNU,RAJASTHAN                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 Email:bbfashions@gmail.com                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 &lt;br&gt;                 WEBSITE DESIGNED BY :                 &lt;br&gt;                 Ayush Gupta (with support of RAD)                 &lt;br&gt;                 RADA DESIGNERS pvt. ltd.                 &lt;br&gt;                 Contact No.&lt;br&gt;                 07705894165&lt;br&gt;                 08504030676                 &lt;br&gt;                 &lt;br&gt;                 LOGO DESIGNED BY :&lt;br&gt;                 Himank Goel                 (IIT 2016061)                 &lt;/p&gt;               &lt;/footer&gt;              &lt;!--&lt;script  src=&quot;jquery-3.1.1.min.js&quot;&gt;--&gt;             &lt;!--&lt;/script&gt;--&gt;             &lt;script&gt;                     src=&quot;https://code.jquery.com/jquery-3.1.1.js&quot;                     integrity=&quot;sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=&quot;                     crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;             &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;             &lt;script src=&quot;jquery.smartmarquee.js&quot;&gt;&lt;/script&gt;             &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;         &lt;/div&gt;     &lt;/div&gt;     &lt;/body&gt;     &lt;/html&gt;</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -169,7 +176,6 @@
         <option value="$PROJECT_DIR$/views/fashion.ejs" />
         <option value="$PROJECT_DIR$/views/myorders.ejs" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
-        <option value="$PROJECT_DIR$/public/bb.css" />
         <option value="$PROJECT_DIR$/public/bbc.css" />
         <option value="$PROJECT_DIR$/public/bbl.css" />
         <option value="$PROJECT_DIR$/public/frontend.js" />
@@ -185,6 +191,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/bblo.css" />
         <option value="$PROJECT_DIR$/views/website.ejs" />
+        <option value="$PROJECT_DIR$/public/bb.css" />
       </list>
     </option>
   </component>
@@ -220,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -579,12 +586,13 @@
       <workItem from="1490512968097" duration="89000" />
       <workItem from="1490625248838" duration="289000" />
       <workItem from="1491327449401" duration="7104000" />
-      <workItem from="1491397492654" duration="3671000" />
+      <workItem from="1491397492654" duration="4943000" />
+      <workItem from="1491403499777" duration="170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="583640000" />
+    <option name="totallyTimeSpent" value="585082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,28 +604,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13948497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1389485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33559322" sideWeight="0.10944206" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29774678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33559322" sideWeight="0.89055794" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30203864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33559322" sideWeight="0.89055794" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35141242" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,47 +807,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/grader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/grader.js" />
+    <entry file="file://$PROJECT_DIR$/public/sample.js" />
     <entry file="file://$PROJECT_DIR$/public/frontend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/register.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/register.ejs" />
     <entry file="file://$PROJECT_DIR$/public/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,13 +852,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/fashion.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="792">
           <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
@@ -887,7 +865,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="330">
           <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding />
         </state>
@@ -911,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/register.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="2090">
           <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
           <folding />
         </state>
@@ -921,7 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,42 +910,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/A-Website-for-a-fashion-store/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/A-Website-for-a-fashion-store/views/website.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/website.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="22">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/bb.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="290" column="21" lean-forward="true" selection-start-line="290" selection-start-column="21" selection-end-line="290" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/A-Website-for-a-fashion-store/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/A-Website-for-a-fashion-store/views/website.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/website.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state relative-caret-position="22">
+          <caret line="290" column="60" lean-forward="false" selection-start-line="290" selection-start-column="60" selection-end-line="290" selection-end-column="60" />
           <folding />
         </state>
       </provider>
