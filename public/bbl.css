@@ -3,7 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-#h2{
+#h2 {
     color: #761C19;
     text-decoration: none double;
     font-size: 40px;
@@ -16,12 +16,11 @@ html, body {
 }
 
 /*center{*/
-    /*margin-top: 2%;*/
-    /*color: red;*/
+/*margin-top: 2%;*/
+/*color: red;*/
 /*}*/
 
-input
-{
+input {
     /*margin-left: 540px;*/
     padding-top: 2px;
     /*padding-left: 99px;*/
@@ -33,7 +32,7 @@ input
     /*width: 300px;*/
 }
 
-#btn{
+#btn {
     /*margin-left: 5px;*/
     /*background-color: beige ;*/
     /*border-color: #000;*/
@@ -44,56 +43,54 @@ input
 
 }
 
-#pass{
+#pass {
     margin-top: 9px;
     background: transparent;
 }
-
 
 form {
     /*margin-left: 39%;*/
     margin-top: 2%;
     font-size: 22px;
 
-
 }
 
-
-a{
+a {
     color: black;
 }
-body{
+
+body {
     color: #FFF;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#h1{
+
+#h1 {
     color: #761C19;
     margin-top: 17%;
     /*margin-left: 36%;*/
 
 }
 
-#nav{
+#nav {
     padding-top: 44px;
     /*background-color: #122b40;*/
     opacity: 0.9;
 }
 
-
-#main{
+#main {
     /*background-image:url{'t8.jpg'};*/
-    background-image:url('brooke-cagle-39572.jpg');
+    background-image: url('brooke-cagle-39572.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 2000px;
     margin-top: -20px;
 }
 
-.fb-like{
+.fb-like {
     margin-top: 15px;
 }
 
-#user{
-background: transparent;
+#user {
+    background: transparent;
 }

@@ -1,4 +1,3 @@
-
 //
 // $('.btn').click(function (){
 //     $('.btn').text("BOOKED")
@@ -36,29 +35,29 @@
 //
 // $("#btn1").click(function() {
 //
-$("button").click(function (){
-     $.ajax({
+$("button").click(function () {
+    $.ajax({
 
-         type: 'POST',
-         dataType: 'json',
-         url: 'http://localhost:5000/loginned/:un/book/:id',
-         data: {
-             'id':$(this).attr('id')
-         },
-    //     // headers:{
-    //       //   'Accept':'application/vnd.github.v3+json'
-    //     // },
-         success: function () {
-             $(this).text("BOOKED");
+        type: 'POST',
+        dataType: 'json',
+        url: 'http://localhost:5000/loginned/:un/book/:id',
+        data: {
+            'id': $(this).attr('id')
+        },
+        //     // headers:{
+        //       //   'Accept':'application/vnd.github.v3+json'
+        //     // },
+        success: function () {
+            $(this).text("BOOKED");
         },
 
-         error: function () {
-             $(this).text("BOOKED");
-         }
+        error: function () {
+            $(this).text("BOOKED");
+        }
 
 
     });
-  });
+});
 
 
 // $("button").click(function() {
