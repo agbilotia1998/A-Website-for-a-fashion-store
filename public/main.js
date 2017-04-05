@@ -5,14 +5,14 @@
 
 
 
-$(function(){
+$(function () {
     $(" .dropdown ").hover(
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+        function () {
+            $('.dropdown-menu', this).stop(true, true).fadeIn("fast");
             $(this).toggleClass('open');
         },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+        function () {
+            $('.dropdown-menu', this).stop(true, true).fadeOut("fast");
             $(this).toggleClass('open');
         });
 });
@@ -24,13 +24,13 @@ $(document).ready(function () {
         duration: 1000,
 
         // auto loop
-        loop : true,
+        loop: true,
 
         // interval duration
-        interval : 1,
+        interval: 1,
 
         // 'vertical' or 'horizontal'
-        axis : "vertical"
+        axis: "vertical"
 
     });
 });
@@ -45,8 +45,10 @@ function carousel() {
         x[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
+    if (slideIndex > x.length) {
+        slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
@@ -58,23 +60,27 @@ function plusDivs(n) {
 }
 
 function currentDiv(n) {
-    showDivs(slideIndexx= n);
+    showDivs(slideIndexx = n);
 }
 
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndexx = 1}
-    if (n < 1) {slideIndexx = x.length}
+    if (n > x.length) {
+        slideIndexx = 1
+    }
+    if (n < 1) {
+        slideIndexx = x.length
+    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" w3-white", "");
     }
-    x[slideIndexx-1].style.display = "block";
-    dots[slideIndexx-1].className += " w3-white";
-     //setTimeout(showDivs(n+1), 2000); // Change image every 2 seconds
+    x[slideIndexx - 1].style.display = "block";
+    dots[slideIndexx - 1].className += " w3-white";
+    //setTimeout(showDivs(n+1), 2000); // Change image every 2 seconds
 }
 
