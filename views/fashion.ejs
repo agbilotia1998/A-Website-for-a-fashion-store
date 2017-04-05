@@ -16,8 +16,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -29,76 +28,45 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home </a></li>
+                <li ><a href="/">Home </a></li>
                 <li><a href="/fashion/gallery">Gallery</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Clothings <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/readymade">
-                                Readymade</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/readymade">
-                                Readymade</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/readymade">
+                                Readymade</a><%}%>
+                            <% if(!un){ %><a href="/fashion/readymade">
+                                Readymade</a><%}%>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/sarees">
-                                Sarees</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/sarees">
-                                Sarees</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/sarees">
+                                Sarees</a><%}%>
+                            <% if(!un){%><a href="/fashion/sarees">
+                                Sarees</a><%}%>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/choonri">
-                                Choonri</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/choonri">
-                                Choonri</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/choonri">
+                                Choonri</a><%}%>
+                            <% if(!un){%><a href="/fashion/choonri">
+                                Choonri</a><%}%>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/suitings">
-                                Suitings</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/suitings">
-                                Suitings</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/suitings">
+                                Suitings</a><%}%>
+                            <% if(!un){%><a href="/fashion/suitings">
+                                Suitings</a><%}%>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/bari">
-                                Bari</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/bari">
-                                Bari</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/bari">
+                                Bari</a><%}%>
+                            <% if(!un){%><a href="/fashion/bari">
+                                Bari</a><%}%>
                         </li>
                         <li role="separator" class="divider"></li>
-                        <li>
-                            <% if(un){ %>
-                            <a href="/loginned/<%= un %>/suits">
-                                Suits</a>
-                            <% } %>
-                            <% if(!un){ %>
-                            <a href="/fashion/suits">
-                                Suits</a>
-                            <% } %>
+                        <li><% if(un){%><a href="/loginned/<%= un %>/suits">
+                                Suits</a><%}%>
+                            <% if(!un){%><a href="/fashion/suits">
+                                Suits</a><%}%>
                         </li>
                     </ul>
                 </li>
@@ -107,7 +75,7 @@
                 <li><a href="#">Privacy policy</a></li>
             </ul>
 
-            <% if(un){ %>
+            <% if(un){%>
             <div class="nav navbar-right">
                 <ul class="nav navbar-nav">
                     <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
@@ -117,8 +85,7 @@
 
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><%= un %> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= un %> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/loginned/<%= un %>/myaccount">My account</a></li>
                             <li role="separator" class="divider"></li>
@@ -127,64 +94,58 @@
                             <li><a href="#">Submit Feedback</a></li>
                         </ul>
                     </li>
-                    <li><a href="/logout">Log out</a></li>
+                    <li> <a href="/logout">Log out</a></li>
 
                 </ul>
             </div>
-            <% } %>
+            <%}%>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 
 </nav>
 
-<% datas.forEach(function(data){ %>
+<% datas.forEach(function(data){%>
 
 <div class="container" id="container">
-    <div class="row">
+<div class="row">
 
-        <div class="col-lg-4">
+<div class="col-lg-4">
 
 
-            <div class="thumbnail">
-                <h4>
-                    <% if(type != "gallery"){ %>
-                    <%= data.name %>
-                    <% } %>
-                </h4>
-                <img src="<%= data.source %>">
-                <div class="caption">
-                    <% if(type != "gallery"){ %>
-                    PRICE:<%= data.price %>
-                    <br>
-                    <button id="<%= data.id %>" class="btn btn-default btn-lg"
-                            <% if(!un){ %>onclick="location.href ='/login'"
-                            <% } %>
-                            <% if(data.amount <= 0){ %>
-                            disabled
-                            <% } %>
-                            type="submit" name="<%= data.amount %>">
-                        <% if(data.amount > 0){ %>
-                        BOOK NOW!
-                        <% } %>
-                        <% if(data.amount <= 0){ %>
-                        NOT AVAILABLE
-                        <% } %>
-                    </button>
-                    <% } %>
-                    <br>
-                    <br>
+<div class="thumbnail">
+    <h4>
+        <% if(type!="gallery"){%>
+            <%= data.name %>
+        <%}%>
+    </h4>
+<img src="<%= data.source%>">
+<div class="caption">
+    <% if(type!="gallery"){%>
+PRICE:<%= data.price %>
+<br>
+<button id="<%= data.id%>" class="btn btn-default btn-lg" <%if(!un){%>onclick="location.href ='/login'"<%}%> <%if(data.amount<=0){%> disabled <%}%> type="submit" name="<%=data.amount%>" >
+    <%if(data.amount>0){%>BOOK NOW!<%}%>
+    <%if(data.amount<=0){%>NOT AVAILABLE<%}%>
+</button>
+    <%}%>
+    <br>
+    <br>
 
-                    <% if(type != "gallery"){ %>
-                    <label for="quantity">Quantity</label>
-                    <input type="number" name="quantity" id="<%= data.id %>quantity" placeholder="0" min="1">
-                    <% } %>
-                </div>
-            </div>
-        </div>
-    </div>
+    <% if(type!="gallery"){%>
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" id="<%= data.id%>quantity" placeholder="0" min="1">
+    <%}%>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <% }); %>
+
+
+
+
 
 <script type="ajax.js"></script>
 <script src="/jquery-3.1.1.min.js"></script>
@@ -194,41 +155,40 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-    $("button").click(function () {
-        var id = $(this).attr('id');
-        var quant = document.getElementById(id + 'quantity').value;
+    $("button").click(function (){
+        var id=$(this).attr('id');
+        var quant=document.getElementById(id+'quantity').value;
         var d = new Date();
-        <% if(un){ %>  var un = "<%= un %>";
+      <%if(un){%>  var un="<%=un%>";
 //        $("#"+id).text("BOOKED");
-        <% } %>
+        <%}%>
 
         $.ajax({
             type: 'POST',
             crossDomain: true,
             dataType: 'json',
-            <% if(un){ %>
-            url: 'https://bankebiharifashions.herokuapp.com/loginned/' + un + '/book/' + id + '/' + quant + '/' + d.toString(), <% } %>
+            <% if(un){%> url:'https://bankebiharifashions.herokuapp.com/loginned/'+ un+'/book/'+id+'/'+quant+'/'+d.toString(), <%}%>
 //            data: {
 //            "success": "Updated Successfully", "status": 200
 //
 //              //  'id':$(this).attr('id')
 //            //},
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'POST,GET,PUT,DELETE',
+            headers:{
+                'Access-Control-Allow-Origin':'*',
+                'Access-Control-Allow-Methods':'POST,GET,PUT,DELETE',
                 'Access-Control-Allow-Headers': 'Authorization, Lan'
             },
 
             success: function () {
-                <% if(un){ %> $("#" + id).text("BOOKED"); <% } %>
-                <% if(un){ %> alert("Order succesfully placed") <% } %>
-                <% if(un){ %> $("#" + id).text("BOOK NOW"); <% } %>
+               <%if(un){%> $("#"+id).text("BOOKED"); <%}%>
+                <%if(un){%> alert("Order succesfully placed") <%}%>
+                <%if(un){%> $("#"+id).text("BOOK NOW"); <%}%>
             },
             error: function (data) {
                 $(this).text("BOOK NOW");
             }
         });
-    });
+        });
 
 
 </script>

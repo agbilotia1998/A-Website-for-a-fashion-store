@@ -14,8 +14,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -27,23 +26,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home </a></li>
+                <li ><a href="/">Home </a></li>
                 <li><a href="/fashion/gallery">Gallery</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Clothings <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/loginned/<%= username %>/readymade">Readymade</a></li>
+                        <li><a href="/loginned/<%=username%>/readymade">Readymade</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= username %>/suitings">Suitings and shirtings</a></li>
+                        <li><a href="/loginned/<%=username%>/suitings">Suitings and shirtings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= username %>/sarees">Sarees</a></li>
+                        <li><a href="/loginned/<%=username%>/sarees">Sarees</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= username %>/chooni"> Choonri</a></li>
+                        <li><a href="/loginned/<%=username%>/chooni"> Choonri</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/bari<%= username %>/">Bari</a></li>
+                        <li><a href="/loginned/bari<%=username%>/">Bari</a> </li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= username %>/suits">Suits</a></li>
+                        <li><a href="/loginned/<%=username%>/suits">Suits</a> </li>
                     </ul>
                 </li>
                 <li><a href="/#about">About Us</a></li>
@@ -61,8 +59,7 @@
 
                     <!--<li><a href="#"><%= name %></a></li>-->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><%= name %> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= name %> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/loginned/<%= username %>/myaccount">My account</a></li>
                             <li role="separator" class="divider"></li>
@@ -71,7 +68,7 @@
                             <li><a href="#">Submit Feedback</a></li>
                         </ul>
                     </li>
-                    <li><a href="/logout">Log out</a></li>
+                    <li> <a href="/logout">Log out</a></li>
 
                 </ul>
             </div>
@@ -82,61 +79,61 @@
 
 
 <center>
-    <h1>
-        Welcome <%= name %>
-    </h1>
+<h1 >
+    Welcome <%= name %>
+</h1>
 </center>
 
 
 <div class="container">
 
-    <div class="row">
-        <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-8">
             <h2>What You Want to Buy ? ............</h2>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/bari" class="bi"> BARI</a>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/chooni" class="bi"> CHOONRI</a>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/readymade" class="bi"> READY MADE CLOTHES</a>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/sarees" class="bi"> SAREES</a>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/suitings" class="bi"> SUITINGS AND SHIRTINGS </a>
-            <br>
-            <br>
-            <a href="/loginned/<%= username %>/suits" class="bi"> SUITS</a>
-            <br>
-            <br>
-        </div>
+<br>
+<br>
+<a href="/loginned/<%=username%>/bari" class="bi" > BARI</a>
+<br>
+<br>
+<a href="/loginned/<%=username%>/chooni" class="bi" > CHOONRI</a>
+<br>
+<br>
+<a href="/loginned/<%=username%>/readymade" class="bi" >  READY MADE CLOTHES</a>
+<br>
+<br>
+<a href="/loginned/<%=username%>/sarees" class="bi" > SAREES</a>
+<br>
+<br>
+<a href="/loginned/<%=username%>/suitings" class="bi" >  SUITINGS AND SHIRTINGS </a>
+<br>
+<br>
+<a href="/loginned/<%=username%>/suits" class="bi" >  SUITS</a>
+<br>
+<br>
+            </div>
 
         <div class="col-lg-4" id="trending"><h2>
-                Trending</h2>
-            <ul>
-                <li> Embroidery Sarees from Radhika collections</li>
-                <br>
-                <li>Raymond dessigner collection</li>
-                <br>
-                <li>Levis jean series</li>
-                <br>
-                <li>Badasahab exclusive shirts</li>
-                <br>
-            </ul>
+            Trending</h2>
+                <ul>
+                    <li> Embroidery Sarees from Radhika collections</li>
+                    <br>
+                    <li>Raymond dessigner collection</li>
+                    <br>
+                    <li>Levis jean series</li>
+                    <br>
+                    <li>Badasahab exclusive shirts</li>
+                    <br>
+                </ul>
 
         </div>
 
 
-        <script
-                src="https://code.jquery.com/jquery-3.1.1.js"
-                integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-                crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!--<script>-->
+<script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--<script>-->
 </body>
 </html>

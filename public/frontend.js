@@ -3,28 +3,29 @@
  */
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",function(){
 
 
-    $.ajax({
+   $.ajax({
 
-        type: 'GET',
-        dataType: 'json',
-        url: 'http://api.github.com/repos/fossiiita/opencodecollab/issues',
-        headers: {
-            'Accept': 'application/vnd.github.v3+json'
-        },
+       type:'GET',
+       dataType:'json',
+       url:'http://api.github.com/repos/fossiiita/opencodecollab/issues',
+       headers:{
+           'Accept':'application/vnd.github.v3+json'
+       },
 
-        success: function (data) {
+       success:function(data){
 
-            //var a= document.createElement('p');
+         //var a= document.createElement('p');
 
-            $("#login").html(data[0].url);
+         $("#login").html(data[0].url);
 
-        }
+       }
 
 
-    })
+   })
+
 
 
 });

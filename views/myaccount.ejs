@@ -7,103 +7,100 @@
         my account
     </title>
 </head>
-<body>
+    <body>
 
 
-<nav class="navbar navbar-default" id="nav">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
-        </div>
+    <nav class="navbar navbar-default" id="nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home </a></li>
-                <li><a href="/fashion/gallery">Gallery</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Clothings <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/loginned/<%= info.username %>/readymade">Readymade</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= info.username %>/suitings">Suitings and shirtings</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= info.username %>/sarees">Sarees</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= info.username %>/chooni"> Choonri</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= info.username %>/bari">Bari</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/loginned/<%= info.username %>/suits">Suits</a></li>
-                    </ul>
-                </li>
-                <li><a href="/#about">About Us</a></li>
-                <li><a href="/#contact">Contact Us</a></li>
-                <li><a href="#">Privacy policy</a></li>
-            </ul>
-
-
-            <div class="nav navbar-right">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
-                    <a href="#">
-                        <span id="span" class="glyphicon glyphicon-shopping-cart"></span>
-                    </a>
-
-
+                    <li ><a href="/">Home </a></li>
+                    <li><a href="/fashion/gallery">Gallery</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><%= info.name %> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothings <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/loginned/<%= info.username %>/myaccount">My account</a></li>
+                            <li><a href="/loginned/<%=info.username%>/readymade">Readymade</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="/loginned/<%= info.username %>/myorders">My orders</a></li>
+                            <li><a href="/loginned/<%=info.username%>/suitings">Suitings and shirtings</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Submit Feedback</a></li>
+                            <li><a href="/loginned/<%=info.username%>/sarees">Sarees</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/loginned/<%=info.username%>/chooni"> Choonri</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/loginned/<%=info.username%>/bari">Bari</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/loginned/<%=info.username%>/suits">Suits</a> </li>
                         </ul>
                     </li>
-                    <li><a href="/logout">Log out</a></li>
-
+                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="/#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy policy</a></li>
                 </ul>
-            </div>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-
-</nav>
-
-<p>
-    Your Name:<%= info.name %>
-    <br>
-    <br>
-    Your Username:<%= info.username %>
-    <br>
-    Your address:<%= info.address %>
-    <br>
-    Your Contact Number:<%= info.phone %>
-    <br>
-    <br>
-    See your orders
-    <br>
-    <a href="/loginned/<%= info.username %>/myorders">Your orders</a>
-    <br>
 
 
-</p>
-<script
-        src="https://code.jquery.com/jquery-3.1.1.js"
-        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <div class="nav navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
+                        <a href="#">
+                            <span id="span" class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
 
-</body>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= info.name %> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/loginned/<%= info.username %>/myaccount">My account</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/loginned/<%=info.username %>/myorders">My orders</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Submit Feedback</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="/logout">Log out</a></li>
+
+                    </ul>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
+    <p>
+        Your Name:<%= info.name%>
+        <br>
+        <br>
+        Your Username:<%= info.username%>
+        <br>
+        Your address:<%= info.address%>
+        <br>
+        Your Contact Number:<%= info.phone%>
+        <br>
+        <br>
+        See your orders
+        <br>
+        <a href="/loginned/<%= info.username %>/myorders">Your orders</a>
+        <br>
+
+
+    </p>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
 </html>
 

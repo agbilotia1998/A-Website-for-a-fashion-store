@@ -1,94 +1,96 @@
+
+
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <title>REGISTRATION SUCCESSFUL</title>
-    <!-- <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="bbl.css">-->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+ <title>REGISTRATION SUCCESSFUL</title>
+<!-- <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="bbl.css">-->
 
 </head>
 
 
 <body>
 
-<div id="fb-root"></div>
+<div id="fb-root">  </div>
 <script>
-    window.fbAsyncInit = function () {
+    window.fbAsyncInit = function() {
         FB.init({
-            appId: '208143129655109',
-            xfbml: 'true',
-            version: 'v2.8',
-            cookie: 'true'
+            appId      : '208143129655109',
+            xfbml      : 'true',
+            version    : 'v2.8',
+            cookie     : 'true'
         });
         FB.AppEvents.logPageView();
     };
-    (function (d, s, id) {
+    (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
+        js = d.createElement(s); js.id = id;
         js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=208143129655109";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
 
+
+
+
+
+
 <nav class="navbar navbar-default" id="nav">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
-        </div>
+ <div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">Banke Bihari Fashions</a>
+  </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home </a></li>
-                <li><a href="/fashion/gallery">Gallery</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"
-                       data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
-                       data-hover="dropdown">Clothings <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/fashion/readymade">Readymade</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/fashion/suitings">Suitings and shirtings</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/fashion/sarees">Sarees</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/fashion/chooni"> Choonri</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/fashion/bari">Bari</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/fashion/suits">Suits</a></li>
-                    </ul>
-                </li>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <ul class="nav navbar-nav">
+    <li ><a href="/">Home </a></li>
+    <li><a href="/fashion/gallery">Gallery</a></li>
+    <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Clothings <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+      <li><a href="/fashion/readymade">Readymade</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="/fashion/suitings">Suitings and shirtings</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="/fashion/sarees">Sarees</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="/fashion/chooni"> Choonri</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="/fashion/bari">Bari</a> </li>
+      <li role="separator" class="divider"></li>
+      <li><a href="/fashion/suits">Suits</a> </li>
+     </ul>
+    </li>
 
-                <li><a href="/#about">About Us</a></li>
-                <li><a href="/#contact">Contact Us</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li>
+    <li><a href="/#about">About Us</a></li>
+    <li><a href="/#contact">Contact Us</a></li>
+    <li><a href="#">Privacy policy</a></li>
+    <li>
 
-                    <div class="fb-like" data-href="https://www.facebook.com/bankebiharichirawa/" data-width="15px"
-                         data-layout="button_count" data-action="like" data-size="large" data-show-faces="false"
-                         data-share="true"></div>
+     <div class="fb-like" data-href="https://www.facebook.com/bankebiharichirawa/" data-width="15px" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
 
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    </li>
+   </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
 </nav>
-<h1> Thanks <%= name %> For Registering!! </h1><br>
+<h1> Thanks <%= name%> For Registering!! </h1><br>
 <p>
-    Confirm your email-address by clicking on the confirmation link sent to your registered email address.
+ Confirm your email-address by clicking on the confirmation link sent to your registered email address.
 </p>
 <script
         src="https://code.jquery.com/jquery-3.1.1.js"
