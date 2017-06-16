@@ -10,7 +10,6 @@ var express = require("express"),
     mongoose = require("mongoose"),
     Schema = mongoose.Schema,
     nodemailer = require('nodemailer'),
-    sg = require('sendgrid')(process.env.SENDGRID_API_KEY),
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose"),
@@ -327,35 +326,37 @@ app.post("/loginned/:un/book/:id/:quantity/:time", function (req, res) {
     var ordertime = req.params.time;
     //var orders = [];
     //console.log(un);
-    if (req.session.username === un) {
-        bookings.findOne({_id: id}, function (err, book) {
-            var amount = (book.amount) - (quantity);
-            newacc.findOne({username: un}, function (err, bb) {
-                //bb.orders.push(book.name);
-                var name = book.name;
-                var total = (bb.total) + (quantity * (book.price));
-                //console.log(bb.total);
-                newacc.update({username: un}, {
-                    $push: {orders: name + '  -  ' + quantity + '(quantity)' + '--Time of order:' + ordertime},
-                    $set: {total: total}
-                }, function (err, updated) {
+    if (req.session.username) {
+        if (req.session.username === un) {
+            bookings.findOne({_id: id}, function (err, book) {
+                var amount = (book.amount) - (quantity);
+                newacc.findOne({username: un}, function (err, bb) {
+                    //bb.orders.push(book.name);
+                    var name = book.name;
+                    var total = (bb.total) + (quantity * (book.price));
+                    //console.log(bb.total);
+                    newacc.update({username: un}, {
+                        $push: {orders: name + '  -  ' + quantity + '(quantity)' + '--Time of order:' + ordertime},
+                        $set: {total: total}
+                    }, function (err, updated) {
+                        if (err)
+                            console.log(err);
+
+                    });
+                });
+                bookings.update({_id: id}, {$set: {amount: amount}}, function (err, updated) {
                     if (err)
                         console.log(err);
-
+                    else {
+                        res.json({success: "Updated Successfully", status: 200});
+                    }
                 });
-            });
-            bookings.update({_id: id}, {$set: {amount: amount}}, function (err, updated) {
-                if (err)
-                    console.log(err);
-                else {
-                    res.json({success: "Updated Successfully", status: 200});
-                }
-            });
 
-        });
-    }
-    else {
-        res.json({error: "Bad request", status: 404});
+            });
+        }
+        else {
+            res.json({error: "Bad request", status: 404});
+        }
     }
 });
 app.post("/register", function (req, res) {
@@ -371,6 +372,7 @@ app.post("/register", function (req, res) {
         // orders:["Sarees"]
 
     };
+
     newacc.findOne({username: details.username}, function (err, bb) {
         if (!bb) {
             newacc.findOne({email: details.email}, function (err, bb) {
